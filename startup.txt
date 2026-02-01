@@ -1,0 +1,5 @@
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+npx create-vite@latest . --template react
+
+//for local host
+npm run dev -- --host

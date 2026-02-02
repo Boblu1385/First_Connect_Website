@@ -3,3 +3,26 @@ npx create-vite@latest . --template react
 
 //for local host
 npm run dev -- --host
+
+
+
+
+Option 2: localtunnel (No signup needed)
+Install globally:
+npm install -g localtunnel
+
+1.
+Start your dev server:
+npm run dev
+
+2.
+In another terminal, create the tunnel:
+lt --port 5173
+
+Share the URL provided by localtunnel
+Both options create a temporary public URL that tunnels to your localhost. The connection will stay active until you close the terminal. 
+These are perfect for getting feedback during development!
+
+3.
+To host online follow up with this in a new terminal
+.\ngrok http 5173

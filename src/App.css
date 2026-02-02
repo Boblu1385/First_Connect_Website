@@ -47,3 +47,37 @@ body, html {
   background: #fff;
   overflow-x: hidden;
 }
+
+/* Responsive grid layouts for mobile */
+@media (max-width: 768px) {
+  section[style*="gridTemplateColumns"] {
+    grid-template-columns: 1fr !important;
+  }
+  
+  header {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  
+  header > div {
+    margin-bottom: 0.5rem !important;
+    text-align: center;
+  }
+  
+  header span {
+    font-size: 1.1rem !important;
+  }
+  
+  h1 {
+    font-size: 2rem !important;
+  }
+  
+  h2 {
+    font-size: 1.8rem !important;
+  }
+  
+  ul[style*="columns"] {
+    columns: 1 !important;
+  }
+}
+

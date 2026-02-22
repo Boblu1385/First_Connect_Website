@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import logoImage from '../logo_images/Logo Concept-2026-02-01-White.png'
+import groupJoyImage from '../logo_images/GroupJoy.jpg'
+import playtimeImage from '../logo_images/Playtime.jpg'
 
 function App() {
   return (
@@ -11,22 +13,21 @@ function App() {
         alignItems: 'center',
         justifyContent: 'center',
         padding: '1.5rem 3rem',
-        background: '#fff',
-        borderBottom: '1px solid #e8f4f8',
+        background: 'linear-gradient(135deg, #b4d4a8 0%, #9dc7e8 100%)',
         boxShadow: '0 2px 8px rgba(0,0,0,0.05)',
         position: 'sticky',
         top: 0,
         zIndex: 100
       }}>
         <nav style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', justifyContent: 'center' }}>
-          <a href="#welcome" style={{ padding: '0.5rem', color: '#5a8a6f', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Home</a>
-          <a href="#mission" style={{ padding: '0.5rem', color: '#5a8a6f', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Mission</a>
-          <a href="#approach" style={{ padding: '0.5rem', color: '#5a8a6f', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Approach</a>
-          <a href="#team" style={{ padding: '0.5rem', color: '#5a8a6f', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Team</a>
-          <a href="#services" style={{ padding: '0.5rem', color: '#5a8a6f', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Services</a>
-          <a href="#insurance" style={{ padding: '0.5rem', color: '#5a8a6f', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Insurance</a>
-          <a href="/resources" style={{ padding: '0.5rem', color: '#5a8a6f', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Resources</a>
-          <a href="#contact" style={{ padding: '0.5rem', color: '#5a8a6f', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Contact</a>
+          <a href="#welcome" style={{ padding: '0.5rem', color: '#fff', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Home</a>
+          <a href="#mission" style={{ padding: '0.5rem', color: '#fff', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Mission</a>
+          <a href="#approach" style={{ padding: '0.5rem', color: '#fff', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Approach</a>
+          <a href="#team" style={{ padding: '0.5rem', color: '#fff', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Team</a>
+          <a href="#services" style={{ padding: '0.5rem', color: '#fff', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Services</a>
+          <a href="#insurance" style={{ padding: '0.5rem', color: '#fff', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Insurance</a>
+          <a href="/resources" style={{ padding: '0.5rem', color: '#fff', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Resources</a>
+          <a href="#contact" style={{ padding: '0.5rem', color: '#fff', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Contact</a>
         </nav>
       </header>
 
@@ -36,20 +37,46 @@ function App() {
         padding: '3rem 2rem 2rem',
         textAlign: 'center'
       }}>
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
-          <img src={logoImage} alt="Clinic Logo" style={{ height: '120px', width: '120px', borderRadius: '50%', background: '#b4d4a8', padding: '8px' }} />
-          <h2 style={{ fontSize: '2rem', fontWeight: '700', color: '#5a8a6f', margin: 0 }}>First Connect Pediatric Therapy</h2>
+        <div style={{ 
+          position: 'relative', 
+          maxWidth: '1200px', 
+          margin: '0 auto',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center'
+        }}>
+          <img src={playtimeImage} alt="Playtime" style={{ 
+            width: '100%',
+            maxWidth: '800px',
+            height: 'auto', 
+            borderRadius: '16px', 
+            boxShadow: '0 4px 15px rgba(90,138,111,0.15)'
+          }} />
+          <div style={{ 
+            position: 'absolute',
+            bottom: '0',
+            display: 'flex', 
+            flexDirection: 'column', 
+            alignItems: 'center', 
+            gap: '1rem',
+            background: 'transparent',
+            padding: '2rem 3rem',
+            borderRadius: '16px'
+          }}>
+            <img src={logoImage} alt="Clinic Logo" style={{ height: '120px', width: '120px', borderRadius: '50%', background: '#b4d4a8', padding: '8px' }} />
+            <h2 style={{ fontSize: '2rem', fontWeight: '700', color: '#5a8a6f', margin: 0 }}>First Connect Pediatric Therapy</h2>
+          </div>
         </div>
       </section>
 
       {/* Hero Banner */}
       <section style={{
-        background: 'linear-gradient(135deg, #e8f4f8 0%, #f5fbf0 100%)',
-        color: '#5a8a6f',
+        background: 'linear-gradient(135deg, #b4d4a8 0%, #9dc7e8 100%)',
+        color: '#fff',
         padding: '4rem 2rem',
         textAlign: 'center'
       }}>
-        <h1 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '1rem', lineHeight: '1.3', color: '#4a7a5f' }}>
+        <h1 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '1rem', lineHeight: '1.3', color: '#fff' }}>
           Neurodiversity-Affirming Speech Therapy in Newport News, VA
         </h1>
       </section>
@@ -92,9 +119,9 @@ function App() {
             </div>
           </div>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <img src="https://via.placeholder.com/450x450/b4d4a8/ffffff?text=Welcome+Image" alt="Clinic" style={{ 
+            <img src={groupJoyImage} alt="Clinic" style={{ 
               width: '100%', 
-              maxWidth: '450px', 
+              maxWidth: '800px', 
               height: 'auto', 
               borderRadius: '16px', 
               boxShadow: '0 8px 30px rgba(90,138,111,0.15)'
@@ -103,134 +130,125 @@ function App() {
         </div>
       </section>
 
-      {/* Our Mission Section */}
+      {/* Mission, Approach, and Specialties - Three Column Section */}
       <section id="mission" style={{
         background: '#f9fcff',
         padding: '5rem 2rem'
       }}>
-        <div style={{
-          maxWidth: '1200px',
-          margin: '0 auto',
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: '4rem',
-          alignItems: 'center'
+        <div id="approach" style={{
+          maxWidth: '1400px',
+          margin: '0 auto'
         }}>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <img src="https://via.placeholder.com/450x450/9dc7e8/ffffff?text=Mission+Image" alt="Our Mission" style={{ 
-              width: '100%', 
-              maxWidth: '450px', 
-              height: 'auto', 
-              borderRadius: '16px', 
-              boxShadow: '0 8px 30px rgba(157,199,232,0.2)'
-            }} />
-          </div>
-          <div>
-            <h2 style={{ fontSize: '2.5rem', color: '#5a8a6f', marginBottom: '1.5rem', fontWeight: '700' }}>
-              Our Mission
-            </h2>
-            <p style={{ fontSize: '1.15rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
-              Creating connection through play is our number one priority.
-            </p>
-            <p style={{ fontSize: '1.15rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1rem' }}>
-              We believe children learn best through play and thrive through connection. 
-            </p>
-            <p style={{ fontSize: '1.15rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1rem' }}>
-              We understand that when a child feels safe and comfortable, true connection happens and language growth naturally emerges.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Approach Section */}
-      <section id="approach" style={{
-        background: '#fff',
-        padding: '5rem 2rem'
-      }}>
-        <div style={{
-          maxWidth: '1200px',
-          margin: '0 auto',
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: '4rem',
-          alignItems: 'center'
-        }}>
-          <div>
-            <h2 style={{ fontSize: '2.5rem', color: '#5a8a6f', marginBottom: '1.5rem', fontWeight: '700' }}>
-              Our Approach
-            </h2>
-            <p style={{ fontSize: '1.15rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
-              Our therapy is rooted in child-led, play-based experiences that use a child's intrinsic motivation and strengths to support communication development.
-            </p>
-            <p style={{ fontSize: '1.15rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
-              We create joyful, fun and engaging opportunities for growth through a sensory based approach that fosters authentic communication and connection.
-            </p>
-            <p style={{ fontSize: '1.15rem', color: '#4a4a4a', lineHeight: '1.9' }}>
-              We partner closely with families and use a parent coaching model to help caregivers support language development at home and in the community. 
-            </p>
-            <p style={{ fontSize: '1.15rem', color: '#4a4a4a', lineHeight: '1.9' }}>
-              When parents feel confident and empowered, true growth and progress follow.
-            </p>
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <img src="https://via.placeholder.com/450x450/ffd89b/ffffff?text=Approach+Image" alt="Our Approach" style={{ 
-              width: '100%', 
-              maxWidth: '450px', 
-              height: 'auto', 
-              borderRadius: '16px', 
-              boxShadow: '0 8px 30px rgba(255,216,155,0.25)'
-            }} />
-          </div>
-        </div>
-      </section>
-
-      {/* Services Section */}
-      <section id="services" style={{
-        background: '#fff',
-        padding: '5rem 2rem'
-      }}>
-        <div style={{
-          maxWidth: '900px',
-          margin: '0 auto',
-          textAlign: 'center'
-        }}>
-          <h2 style={{ fontSize: '2.5rem', color: '#5a8a6f', marginBottom: '2rem', textAlign: 'center', fontWeight: '700', letterSpacing: '0.05em' }}>
-            SPECIALTIES
-          </h2>
-          <p style={{ fontSize: '1.15rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '2rem' }}>
-            We have advanced training and specialize in:
-          </p>
-          <ul style={{
-            listStyle: 'disc',
-            textAlign: 'left',
-            display: 'inline-block',
-            fontSize: '1.15rem',
-            color: '#4a4a4a',
-            lineHeight: '2',
-            marginBottom: '2rem'
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: '1fr 1fr 1fr',
+            gap: '2.5rem',
+            marginBottom: '3rem'
           }}>
-            <li>Neurodiversity-affirming therapy</li>
-            <li>ADOS-2 testing</li>
-            <li>Gestalt language processing</li>
-            <li>Augmentative and alternative communication (AAC)</li>
-            <li>Childhood apraxia of speech</li>
-            <li>Speech sound disorders</li>
-            <li>Receptive and expressive language delays</li>
-            <li>Oral motor/myofunctional deficits</li>
-            <li>Feeding delays</li>
-            <li>Picky eating</li>
-            <li>Fluency</li>
-            <li>Literacy</li>
-          </ul>
-          <div>
-            <a href="/services" style={{
-              color: '#5a8a6f',
-              fontSize: '1.1rem',
-              fontWeight: '700',
+            {/* Our Mission */}
+            <div style={{
+              background: '#fff',
+              borderRadius: '16px',
+              padding: '2.5rem',
+              boxShadow: '0 6px 25px rgba(90,138,111,0.1)',
+              border: '2px solid #d6ebf5'
+            }}>
+              <h2 style={{ fontSize: '2rem', color: '#5a8a6f', marginBottom: '1.5rem', fontWeight: '700', textAlign: 'center' }}>
+                Our Mission
+              </h2>
+              <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.8', marginBottom: '1rem' }}>
+                Creating connection through play is our number one priority.
+              </p>
+              <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.8', marginBottom: '1rem' }}>
+                We believe children learn best through play and thrive through connection.
+              </p>
+              <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.8' }}>
+                We understand that when a child feels safe and comfortable, true connection happens and language growth naturally emerges.
+              </p>
+            </div>
+
+            {/* Our Approach */}
+            <div style={{
+              background: '#fff',
+              borderRadius: '16px',
+              padding: '2.5rem',
+              boxShadow: '0 6px 25px rgba(90,138,111,0.1)',
+              border: '2px solid #d9ecd1'
+            }}>
+              <h2 style={{ fontSize: '2rem', color: '#5a8a6f', marginBottom: '1.5rem', fontWeight: '700', textAlign: 'center' }}>
+                Our Approach
+              </h2>
+              <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.8', marginBottom: '1rem' }}>
+                Our therapy is rooted in child-led, play-based experiences that use a child's intrinsic motivation and strengths to support communication development.
+              </p>
+              <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.8', marginBottom: '1rem' }}>
+                We create joyful, fun and engaging opportunities for growth through a sensory based approach that fosters authentic communication and connection.
+              </p>
+              <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.8' }}>
+                We partner closely with families and use a parent coaching model to help caregivers support language development at home and in the community.
+              </p>
+            </div>
+
+            {/* Specialties */}
+            <div id="services" style={{
+              background: '#fff',
+              borderRadius: '16px',
+              padding: '2.5rem',
+              boxShadow: '0 6px 25px rgba(90,138,111,0.1)',
+              border: '2px solid #ffe9c7'
+            }}>
+              <h2 style={{ fontSize: '2rem', color: '#5a8a6f', marginBottom: '1.5rem', fontWeight: '700', textAlign: 'center' }}>
+                Specialties
+              </h2>
+              <p style={{ fontSize: '1.05rem', color: '#4a4a4a', lineHeight: '1.6', marginBottom: '1rem', textAlign: 'center' }}>
+                We have advanced training and specialize in:
+              </p>
+              <ul style={{
+                listStyle: 'disc',
+                fontSize: '1rem',
+                color: '#4a4a4a',
+                lineHeight: '1.7',
+                marginLeft: '1.5rem'
+              }}>
+                <li>Neurodiversity-affirming therapy</li>
+                <li>ADOS-2 testing</li>
+                <li>Gestalt language processing</li>
+                <li>AAC</li>
+                <li>Childhood apraxia of speech</li>
+                <li>Speech sound disorders</li>
+                <li>Language delays</li>
+                <li>Oral motor/myofunctional deficits</li>
+                <li>Feeding delays</li>
+                <li>Picky eating</li>
+                <li>Fluency</li>
+                <li>Literacy</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Centered Book a Free Consult Button */}
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
+            <a href="#contact" style={{
+              background: '#ffb84d',
+              color: '#fff',
+              padding: '1rem 2.5rem',
+              borderRadius: '25px',
               textDecoration: 'none',
-              borderBottom: '2px solid #5a8a6f',
-              paddingBottom: '2px',
-              transition: 'color 0.3s'
+              fontWeight: '700',
+              boxShadow: '0 4px 15px rgba(255,184,77,0.3)',
+              transition: 'transform 0.2s',
+              fontSize: '1.1rem'
+            }}>Book a Free Consult</a>
+            <a href="/services" style={{
+              background: '#fff',
+              color: '#5a8a6f',
+              padding: '1rem 2.5rem',
+              borderRadius: '25px',
+              textDecoration: 'none',
+              fontWeight: '700',
+              border: '2px solid #5a8a6f',
+              transition: 'transform 0.2s',
+              fontSize: '1.1rem'
             }}>Learn more about our services →</a>
           </div>
         </div>
@@ -326,6 +344,9 @@ function App() {
             </p>
             <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '0' }}>
               Cherie earned her Bachelor's degree in Speech-Language Pathology with a minor in Special Education from Old Dominion University in 2015, followed by a Master's degree in Communicative Sciences and Disorders from Hampton University in 2018.
+            </p>
+            <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '0' }}>
+              Cherie enjoys hiking a new trail, strolling along the beach or taking long walks with her dogs. Most of all, Cherie cherishes spending time with her family, exploring the stunning Virginia mountains with her husband and boys.
             </p>
           </div>
 
@@ -584,14 +605,10 @@ function App() {
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <h3 style={{ fontSize: '1.9rem', marginBottom: '1.5rem', fontWeight: '700' }}>First Connect Speech Therapy</h3>
           <p style={{ fontSize: '1.1rem', marginBottom: '0.5rem' }}>
-            123 Main Street, Suite 100<br />
-            Newport News, VA 23606
-          </p>
-          <p style={{ fontSize: '1.1rem', marginBottom: '0.5rem' }}>
-            Phone: <a href="tel:7575673649" style={{ color: '#fff', textDecoration: 'none', fontWeight: '700' }}>(757) 567-3649</a>
+            📞 <a href="tel:7575673649" style={{ color: '#fff', textDecoration: 'none', fontWeight: '700' }}>(757) 567-3649</a> | 📠 <a href="tel:8665982999" style={{ color: '#fff', textDecoration: 'none', fontWeight: '700' }}>(866) 598-2999</a>
           </p>
           <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>
-            Fax: <a href="tel:8665982999" style={{ color: '#fff', textDecoration: 'none', fontWeight: '700' }}>(866) 598-2999</a>
+            📍 123 Main Street, Suite 100, Newport News, VA 23606
           </p>
           <p style={{ fontSize: '0.95rem', marginTop: '2rem', opacity: 0.95 }}>
             Locally owned small business in Newport News, VA<br />

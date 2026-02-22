@@ -12,7 +12,7 @@ function Services() {
     <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>
       {/* Navigation Bar */}
       <nav style={{
-        background: '#fff',
+        background: 'linear-gradient(135deg, #b4d4a8 0%, #9dc7e8 100%)',
         boxShadow: '0 2px 10px rgba(0,0,0,0.05)',
         padding: '1.2rem 2rem',
         position: 'sticky',
@@ -28,57 +28,57 @@ function Services() {
           alignItems: 'center'
         }}>
           <a href="/" style={{
-            color: '#5a8a6f',
+            color: '#fff',
             textDecoration: 'none',
             fontWeight: '600',
             fontSize: '1rem',
             transition: 'color 0.3s'
           }}>Home</a>
           <a href="/#mission" style={{
-            color: '#5a8a6f',
+            color: '#fff',
             textDecoration: 'none',
             fontWeight: '600',
             fontSize: '1rem',
             transition: 'color 0.3s'
           }}>Mission</a>
           <a href="/#approach" style={{
-            color: '#5a8a6f',
+            color: '#fff',
             textDecoration: 'none',
             fontWeight: '600',
             fontSize: '1rem',
             transition: 'color 0.3s'
           }}>Approach</a>
           <a href="/#team" style={{
-            color: '#5a8a6f',
+            color: '#fff',
             textDecoration: 'none',
             fontWeight: '600',
             fontSize: '1rem',
             transition: 'color 0.3s'
           }}>Team</a>
           <a href="/services" style={{
-            color: '#5a8a6f',
+            color: '#fff',
             textDecoration: 'none',
             fontWeight: '600',
             fontSize: '1rem',
             transition: 'color 0.3s',
-            borderBottom: '2px solid #5a8a6f'
+            borderBottom: '2px solid #fff'
           }}>Services</a>
           <a href="/#insurance" style={{
-            color: '#5a8a6f',
+            color: '#fff',
             textDecoration: 'none',
             fontWeight: '600',
             fontSize: '1rem',
             transition: 'color 0.3s'
           }}>Insurance</a>
           <a href="/#resources" style={{
-            color: '#5a8a6f',
+            color: '#fff',
             textDecoration: 'none',
             fontWeight: '600',
             fontSize: '1rem',
             transition: 'color 0.3s'
           }}>Resources</a>
           <a href="/#contact" style={{
-            color: '#5a8a6f',
+            color: '#fff',
             textDecoration: 'none',
             fontWeight: '600',
             fontSize: '1rem',
@@ -90,9 +90,8 @@ function Services() {
       {/* Logo and Clinic Name Section */}
       <section style={{
         background: '#fff',
-        padding: '2rem',
-        textAlign: 'center',
-        borderBottom: '1px solid #e8f4ee'
+        padding: '3rem 2rem 2rem',
+        textAlign: 'center'
       }}>
         <div style={{
           display: 'flex',
@@ -100,18 +99,7 @@ function Services() {
           alignItems: 'center',
           gap: '1rem'
         }}>
-          <div style={{
-            width: '120px',
-            height: '120px',
-            borderRadius: '50%',
-            background: '#b4d4a8',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            overflow: 'hidden'
-          }}>
-            <img src={logoImage} alt="First Connect Logo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-          </div>
+          <img src={logoImage} alt="First Connect Logo" style={{ height: '120px', width: '120px', borderRadius: '50%', background: '#b4d4a8', padding: '8px' }} />
           <h1 style={{ fontSize: '2rem', color: '#5a8a6f', margin: 0, fontWeight: '700' }}>
             First Connect Pediatric Therapy, PLLC
           </h1>
@@ -373,17 +361,23 @@ function Services() {
 
       {/* Footer */}
       <footer style={{
-        background: 'linear-gradient(135deg, #5a8a6f 0%, #7a9d8a 100%)',
+        background: 'linear-gradient(135deg, #b4d4a8 0%, #9dc7e8 100%)',
         color: '#fff',
         padding: '3rem 2rem',
         textAlign: 'center'
       }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', fontWeight: '700' }}>First Connect Pediatric Therapy, PLLC</h3>
-          <p style={{ marginBottom: '0.5rem' }}>📞 (757) 567-3649 | 📠 (866) 598-2999</p>
-          <p style={{ marginBottom: '0.5rem' }}>📧 info@firstconnectpediatrictherapy.com</p>
-          <p style={{ marginBottom: '2rem' }}>📍 123 Main Street, Suite 100, Virginia Beach, VA 23456</p>
-          <p style={{ fontSize: '0.9rem', color: '#e0f0e6' }}>© 2026 First Connect Pediatric Therapy, PLLC. All rights reserved.</p>
+          <h3 style={{ fontSize: '1.9rem', marginBottom: '1.5rem', fontWeight: '700' }}>First Connect Speech Therapy</h3>
+          <p style={{ fontSize: '1.1rem', marginBottom: '0.5rem' }}>
+            📞 <a href="tel:7575673649" style={{ color: '#fff', textDecoration: 'none', fontWeight: '700' }}>(757) 567-3649</a> | 📠 <a href="tel:8665982999" style={{ color: '#fff', textDecoration: 'none', fontWeight: '700' }}>(866) 598-2999</a>
+          </p>
+          <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>
+            📍 123 Main Street, Suite 100, Newport News, VA 23606
+          </p>
+          <p style={{ fontSize: '0.95rem', marginTop: '2rem', opacity: 0.95 }}>
+            Locally owned small business in Newport News, VA<br />
+            © 2026 First Connect Speech Therapy. All rights reserved.
+          </p>
         </div>
       </footer>
     </div>

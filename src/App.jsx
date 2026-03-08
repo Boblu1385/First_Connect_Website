@@ -13,7 +13,7 @@ function App() {
         alignItems: 'center',
         justifyContent: 'center',
         padding: '1.5rem 3rem',
-        background: 'linear-gradient(135deg, #b4d4a8 0%, #9dc7e8 100%)',
+        background: 'linear-gradient(135deg, #B0DAB6 0%, #99acff 100%)',
         boxShadow: '0 2px 8px rgba(0,0,0,0.05)',
         position: 'sticky',
         top: 0,
@@ -25,7 +25,7 @@ function App() {
           <a href="#approach" style={{ padding: '0.5rem', color: '#fff', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Approach</a>
           <a href="#team" style={{ padding: '0.5rem', color: '#fff', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Team</a>
           <a href="#services" style={{ padding: '0.5rem', color: '#fff', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Services</a>
-          <a href="#insurance" style={{ padding: '0.5rem', color: '#fff', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Insurance</a>
+          <a href="#payments" style={{ padding: '0.5rem', color: '#fff', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Payments</a>
           <a href="/resources" style={{ padding: '0.5rem', color: '#fff', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Resources</a>
           <a href="#contact" style={{ padding: '0.5rem', color: '#fff', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Contact</a>
         </nav>
@@ -33,7 +33,7 @@ function App() {
 
       {/* Logo and Clinic Name */}
       <section style={{
-        background: '#fff',
+        background: '#fdfae6',
         padding: '3rem 2rem 2rem',
         textAlign: 'center',
         position: 'relative'
@@ -51,7 +51,7 @@ function App() {
             height: '400px',
             overflow: 'hidden',
             borderRadius: '16px',
-            boxShadow: '0 4px 15px rgba(90,138,111,0.15)'
+            boxShadow: '0 4px 15px rgba(176,218,182,0.2)'
           }}>
             <img src={playtimeImage} alt="Playtime" style={{ 
               width: '100%',
@@ -76,10 +76,10 @@ function App() {
               <h2 style={{ 
                 fontSize: '2rem', 
                 fontWeight: '700', 
-                color: '#5a8a6f', 
+                color: '#fff', 
                 margin: 0, 
                 whiteSpace: 'nowrap',
-                background: 'rgba(255, 255, 255, 0.6)',
+                background: 'linear-gradient(135deg, rgba(176, 218, 182, 0.9) 0%, rgba(153, 172, 255, 0.9) 100%)',
                 padding: '0.75rem 2rem',
                 borderRadius: '12px'
               }}>First Connect Pediatric Therapy</h2>
@@ -91,14 +91,14 @@ function App() {
             alignItems: 'center',
             gap: '1rem'
           }}>
-            <img src={logoImage} alt="Clinic Logo" style={{ height: '180px', width: '180px', borderRadius: '50%', background: '#b4d4a8', padding: '12px' }} />
+            <img src={logoImage} alt="Clinic Logo" style={{ height: '180px', width: '180px', borderRadius: '50%', background: '#B0DAB6', padding: '12px' }} />
           </div>
         </div>
       </section>
 
       {/* Hero Banner */}
       <section style={{
-        background: 'linear-gradient(135deg, #b4d4a8 0%, #9dc7e8 100%)',
+        background: 'linear-gradient(135deg, #B0DAB6 0%, #99acff 100%)',
         color: '#fff',
         padding: '4rem 2rem',
         textAlign: 'center'
@@ -110,7 +110,7 @@ function App() {
 
       {/* Welcome Section */}
       <section id="welcome" style={{
-        background: '#fff',
+        background: '#fdfae6',
         padding: '5rem 2rem'
       }}>
         <div style={{
@@ -122,7 +122,7 @@ function App() {
           alignItems: 'center'
         }}>
           <div>
-            <h2 style={{ fontSize: '2.5rem', color: '#5a8a6f', marginBottom: '1.5rem', fontWeight: '700' }}>
+            <h2 style={{ fontSize: '2.5rem', color: '#99acff', marginBottom: '1.5rem', fontWeight: '700' }}>
               Welcome to First Connect Pediatric Speech Therapy
             </h2>
             <p style={{ fontSize: '1.15rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
@@ -133,13 +133,13 @@ function App() {
             </p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '2rem' }}>
               <a href="#contact" style={{
-                background: '#ffb84d',
+                background: '#ff8447',
                 color: '#fff',
                 padding: '0.9rem 2rem',
                 borderRadius: '25px',
                 textDecoration: 'none',
                 fontWeight: '700',
-                boxShadow: '0 4px 15px rgba(255,184,77,0.3)',
+                boxShadow: '0 4px 15px rgba(255,132,71,0.3)',
                 transition: 'transform 0.2s',
                 fontSize: '1.05rem'
               }}>Book a Free Consult</a>
@@ -151,7 +151,7 @@ function App() {
               maxWidth: '800px', 
               height: 'auto', 
               borderRadius: '16px', 
-              boxShadow: '0 8px 30px rgba(90,138,111,0.15)'
+              boxShadow: '0 8px 30px rgba(176,218,182,0.2)'
             }} />
           </div>
         </div>
@@ -159,7 +159,7 @@ function App() {
 
       {/* Mission, Approach, and Specialties - Three Column Section */}
       <section id="mission" style={{
-        background: '#f9fcff',
+        background: '#fdfae6',
         padding: '5rem 2rem'
       }}>
         <div id="approach" style={{
@@ -177,10 +177,10 @@ function App() {
               background: '#fff',
               borderRadius: '16px',
               padding: '2.5rem',
-              boxShadow: '0 6px 25px rgba(90,138,111,0.1)',
-              border: '2px solid #d6ebf5'
+              boxShadow: '0 6px 25px rgba(176,218,182,0.2)',
+              border: '2px solid #B0DAB6'
             }}>
-              <h2 style={{ fontSize: '2rem', color: '#5a8a6f', marginBottom: '1.5rem', fontWeight: '700', textAlign: 'center' }}>
+              <h2 style={{ fontSize: '2rem', color: '#99acff', marginBottom: '1.5rem', fontWeight: '700', textAlign: 'center' }}>
                 Our Mission
               </h2>
               <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.8', marginBottom: '1rem' }}>
@@ -199,10 +199,10 @@ function App() {
               background: '#fff',
               borderRadius: '16px',
               padding: '2.5rem',
-              boxShadow: '0 6px 25px rgba(90,138,111,0.1)',
-              border: '2px solid #d9ecd1'
+              boxShadow: '0 6px 25px rgba(153,172,255,0.2)',
+              border: '2px solid #99acff'
             }}>
-              <h2 style={{ fontSize: '2rem', color: '#5a8a6f', marginBottom: '1.5rem', fontWeight: '700', textAlign: 'center' }}>
+              <h2 style={{ fontSize: '2rem', color: '#99acff', marginBottom: '1.5rem', fontWeight: '700', textAlign: 'center' }}>
                 Our Approach
               </h2>
               <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.8', marginBottom: '1rem' }}>
@@ -221,10 +221,10 @@ function App() {
               background: '#fff',
               borderRadius: '16px',
               padding: '2.5rem',
-              boxShadow: '0 6px 25px rgba(90,138,111,0.1)',
-              border: '2px solid #ffe9c7'
+              boxShadow: '0 6px 25px rgba(255,132,71,0.2)',
+              border: '2px solid #ff8447'
             }}>
-              <h2 style={{ fontSize: '2rem', color: '#5a8a6f', marginBottom: '1.5rem', fontWeight: '700', textAlign: 'center' }}>
+              <h2 style={{ fontSize: '2rem', color: '#99acff', marginBottom: '1.5rem', fontWeight: '700', textAlign: 'center' }}>
                 Specialties
               </h2>
               <p style={{ fontSize: '1.05rem', color: '#4a4a4a', lineHeight: '1.6', marginBottom: '1rem', textAlign: 'center' }}>
@@ -256,24 +256,24 @@ function App() {
           {/* Centered Book a Free Consult Button */}
           <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
             <a href="#contact" style={{
-              background: '#ffb84d',
+              background: '#ff8447',
               color: '#fff',
               padding: '1rem 2.5rem',
               borderRadius: '25px',
               textDecoration: 'none',
               fontWeight: '700',
-              boxShadow: '0 4px 15px rgba(255,184,77,0.3)',
+              boxShadow: '0 4px 15px rgba(255,132,71,0.3)',
               transition: 'transform 0.2s',
               fontSize: '1.1rem'
             }}>Book a Free Consult</a>
             <a href="/services" style={{
               background: '#fff',
-              color: '#5a8a6f',
+              color: '#99acff',
               padding: '1rem 2.5rem',
               borderRadius: '25px',
               textDecoration: 'none',
               fontWeight: '700',
-              border: '2px solid #5a8a6f',
+              border: '2px solid #99acff',
               transition: 'transform 0.2s',
               fontSize: '1.1rem'
             }}>Learn more about our services →</a>
@@ -283,7 +283,7 @@ function App() {
 
       {/* Why Choose First Connect Section */}
       <section style={{
-        background: '#f9fcff',
+        background: '#fdfae6',
         padding: '5rem 2rem'
       }}>
         <div style={{
@@ -291,7 +291,7 @@ function App() {
           margin: '0 auto',
           textAlign: 'center'
         }}>
-          <h2 style={{ fontSize: '2.5rem', color: '#5a8a6f', marginBottom: '2rem', fontWeight: '700' }}>
+          <h2 style={{ fontSize: '2.5rem', color: '#99acff', marginBottom: '2rem', fontWeight: '700' }}>
             Why Choose First Connect?
           </h2>
           <p style={{ fontSize: '1.15rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
@@ -305,7 +305,7 @@ function App() {
 
       {/* ADOS-2 Section */}
       <section style={{
-        background: '#fff',
+        background: '#fdfae6',
         padding: '5rem 2rem'
       }}>
         <div style={{
@@ -314,8 +314,8 @@ function App() {
         }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem' }}>
             {/* What is ADOS-2 */}
-            <div style={{ background: '#f9fcff', padding: '2.5rem', borderRadius: '16px', boxShadow: '0 6px 25px rgba(157,199,232,0.15)', border: '2px solid #d6ebf5' }}>
-              <h3 style={{ fontSize: '1.9rem', color: '#5a8a6f', marginBottom: '1.2rem', fontWeight: '700' }}>
+            <div style={{ background: '#fff', padding: '2.5rem', borderRadius: '16px', boxShadow: '0 6px 25px rgba(153,172,255,0.2)', border: '2px solid #99acff' }}>
+              <h3 style={{ fontSize: '1.9rem', color: '#99acff', marginBottom: '1.2rem', fontWeight: '700' }}>
                 What is ADOS-2?
               </h3>
               <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9' }}>
@@ -324,8 +324,8 @@ function App() {
             </div>
 
             {/* Why ADOS-2 is Important */}
-            <div style={{ background: '#f7fcf5', padding: '2.5rem', borderRadius: '16px', boxShadow: '0 6px 25px rgba(180,212,168,0.15)', border: '2px solid #d9ecd1' }}>
-              <h3 style={{ fontSize: '1.9rem', color: '#5a8a6f', marginBottom: '1.2rem', fontWeight: '700' }}>
+            <div style={{ background: '#fff', padding: '2.5rem', borderRadius: '16px', boxShadow: '0 6px 25px rgba(176,218,182,0.2)', border: '2px solid #B0DAB6' }}>
+              <h3 style={{ fontSize: '1.9rem', color: '#99acff', marginBottom: '1.2rem', fontWeight: '700' }}>
                 Why ADOS-2 is Important
               </h3>
               <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9' }}>
@@ -338,14 +338,14 @@ function App() {
 
       {/* Meet Our Team Section */}
       <section id="team" style={{
-        background: '#f9fcff',
+        background: '#fdfae6',
         padding: '5rem 2rem'
       }}>
         <div style={{
           maxWidth: '1200px',
           margin: '0 auto'
         }}>
-          <h2 style={{ fontSize: '2.5rem', color: '#5a8a6f', marginBottom: '3rem', textAlign: 'center', fontWeight: '700' }}>
+          <h2 style={{ fontSize: '2.5rem', color: '#99acff', marginBottom: '3rem', textAlign: 'center', fontWeight: '700' }}>
             Meet Our Team
           </h2>
           
@@ -355,12 +355,12 @@ function App() {
             borderRadius: '16px',
             padding: '3rem',
             marginBottom: '2.5rem',
-            boxShadow: '0 6px 25px rgba(90,138,111,0.1)'
+            boxShadow: '0 6px 25px rgba(176,218,182,0.2)'
           }}>
-            <h3 style={{ fontSize: '2rem', color: '#5a8a6f', marginBottom: '0.5rem', fontWeight: '700' }}>
+            <h3 style={{ fontSize: '2rem', color: '#99acff', marginBottom: '0.5rem', fontWeight: '700' }}>
               Cherie Rose, M.S., CCC-SLP
             </h3>
-            <p style={{ fontSize: '1.1rem', color: '#7a9d8a', marginBottom: '1.8rem', fontStyle: 'italic', fontWeight: '600' }}>
+            <p style={{ fontSize: '1.1rem', color: '#B0DAB6', marginBottom: '1.8rem', fontStyle: 'italic', fontWeight: '600' }}>
               Owner, Speech-Language Pathologist
             </p>
             <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
@@ -382,13 +382,13 @@ function App() {
             background: '#fff',
             borderRadius: '16px',
             padding: '3rem',
-            boxShadow: '0 6px 25px rgba(90,138,111,0.1)'
+            boxShadow: '0 6px 25px rgba(176,218,182,0.2)'
           }}>
-            <h3 style={{ fontSize: '2rem', color: '#5a8a6f', marginBottom: '0.5rem', fontWeight: '700' }}>
+            <h3 style={{ fontSize: '2rem', color: '#99acff', marginBottom: '0.5rem', fontWeight: '700' }}>
               Lindsey Lewandowski, M.S., CCC-SLP
             </h3>
-            <p style={{ fontSize: '1.1rem', color: '#7a9d8a', marginBottom: '1.8rem', fontStyle: 'italic', fontWeight: '600' }}>
-              Speech-Language Pathologist
+            <p style={{ fontSize: '1.1rem', color: '#B0DAB6', marginBottom: '1.8rem', fontStyle: 'italic', fontWeight: '600' }}>
+              Owner, Speech-Language Pathologist
             </p>
             <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
               Lindsey Lewandowski, CCC-SLP, is a board certified speech language pathologist through the American Speech Language Hearing Association (ASHA) and holds a Virgina state license. She earned her undergraduate degree in sociology from the University of Virginia in 2006 where she played Division 1 field hockey.  In 2008, her dad suffered a major stroke and needed intensive speech therapy. Through this experience, she learned of speech therapy and went on to study speech pathology at Old Dominion University where she earned her Master of Science in Education in 2012.
@@ -412,14 +412,14 @@ function App() {
 
       {/* Advanced Trainings Section */}
       <section id="trainings" style={{
-        background: '#fff',
+        background: '#fdfae6',
         padding: '5rem 2rem'
       }}>
         <div style={{
           maxWidth: '1200px',
           margin: '0 auto'
         }}>
-          <h2 style={{ fontSize: '2.5rem', color: '#5a8a6f', marginBottom: '3rem', textAlign: 'center', fontWeight: '700' }}>
+          <h2 style={{ fontSize: '2.5rem', color: '#99acff', marginBottom: '3rem', textAlign: 'center', fontWeight: '700' }}>
             Advanced Trainings & Specializations
           </h2>
           
@@ -454,115 +454,70 @@ function App() {
 
       {/* Testimonials Section */}
       <section id="testimonials" style={{
-        background: '#f9fcff',
+        background: '#fdfae6',
         padding: '5rem 2rem'
       }}>
         <div style={{
           maxWidth: '1000px',
           margin: '0 auto'
         }}>
-          <h2 style={{ fontSize: '2.5rem', color: '#5a8a6f', marginBottom: '3rem', textAlign: 'center', fontWeight: '700' }}>
+          <h2 style={{ fontSize: '2.5rem', color: '#99acff', marginBottom: '3rem', textAlign: 'center', fontWeight: '700' }}>
             What Families Are Saying
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem' }}>
-            <div style={{ background: '#f9fcff', padding: '2.5rem', borderRadius: '16px', boxShadow: '0 6px 25px rgba(157,199,232,0.15)', borderLeft: '4px solid #9dc7e8' }}>
+            <div style={{ background: '#fff', padding: '2.5rem', borderRadius: '16px', boxShadow: '0 6px 25px rgba(153,172,255,0.2)', borderLeft: '4px solid #99acff' }}>
               <p style={{ fontSize: '1.15rem', color: '#4a4a4a', fontStyle: 'italic', lineHeight: '1.9', marginBottom: '1.2rem' }}>
                 "First Connect Speech Therapy is uniquely welcoming and affirming of all kids with communication needs. The team is professional, caring, and dedicated to helping each child reach their full potential."
               </p>
-              <p style={{ fontSize: '1rem', color: '#7a9d8a', fontWeight: '600', textAlign: 'right' }}>~ Parent</p>
+              <p style={{ fontSize: '1rem', color: '#B0DAB6', fontWeight: '600', textAlign: 'right' }}>~ Parent</p>
             </div>
-            <div style={{ background: '#f9fcff', padding: '2.5rem', borderRadius: '16px', boxShadow: '0 6px 25px rgba(157,199,232,0.15)', borderLeft: '4px solid #9dc7e8' }}>
+            <div style={{ background: '#fff', padding: '2.5rem', borderRadius: '16px', boxShadow: '0 6px 25px rgba(153,172,255,0.2)', borderLeft: '4px solid #99acff' }}>
               <p style={{ fontSize: '1.15rem', color: '#4a4a4a', fontStyle: 'italic', lineHeight: '1.9', marginBottom: '1.2rem' }}>
                 "My family and I have had an outstanding experience with First Connect. The therapists are knowledgeable, patient, and truly care about the progress of each child."
               </p>
-              <p style={{ fontSize: '1rem', color: '#7a9d8a', fontWeight: '600', textAlign: 'right' }}>~ Parent</p>
+              <p style={{ fontSize: '1rem', color: '#B0DAB6', fontWeight: '600', textAlign: 'right' }}>~ Parent</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Insurance Section */}
-      <section id="insurance" style={{
-        background: '#f9fcff',
+      {/* Payment Options Section */}
+      <section id="payments" style={{
+        background: '#fdfae6',
         padding: '5rem 2rem'
       }}>
         <div style={{
-          maxWidth: '1000px',
-          margin: '0 auto'
+          maxWidth: '900px',
+          margin: '0 auto',
+          textAlign: 'center'
         }}>
-          <h2 style={{ fontSize: '2.5rem', color: '#5a8a6f', marginBottom: '3rem', textAlign: 'center', fontWeight: '700' }}>
-            Insurances We Accept
+          <h2 style={{ fontSize: '2.5rem', color: '#99acff', marginBottom: '3rem', fontWeight: '700' }}>
+            Payment Options
           </h2>
-          <ul style={{
-            columns: 2,
-            columnGap: '4rem',
-            fontSize: '1.15rem',
-            color: '#4a4a4a',
-            marginBottom: '3rem',
-            listStyle: 'none',
-            maxWidth: '850px',
-            margin: '0 auto 3rem',
-            padding: 0
+          <div style={{
+            background: '#fff',
+            borderRadius: '16px',
+            padding: '3rem',
+            boxShadow: '0 6px 25px rgba(176,218,182,0.2)',
+            border: '2px solid #B0DAB6'
           }}>
-            <li style={{ marginBottom: '1rem', paddingLeft: '1.5rem', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#9dc7e8', fontWeight: 'bold' }}>✓</span>
-              Tricare
-            </li>
-            <li style={{ marginBottom: '1rem', paddingLeft: '1.5rem', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#9dc7e8', fontWeight: 'bold' }}>✓</span>
-              Anthem
-            </li>
-            <li style={{ marginBottom: '1rem', paddingLeft: '1.5rem', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#9dc7e8', fontWeight: 'bold' }}>✓</span>
-              Anthem HealthKeepers
-            </li>
-            <li style={{ marginBottom: '1rem', paddingLeft: '1.5rem', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#9dc7e8', fontWeight: 'bold' }}>✓</span>
-              Sentara Health
-            </li>
-            <li style={{ marginBottom: '1rem', paddingLeft: '1.5rem', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#9dc7e8', fontWeight: 'bold' }}>✓</span>
-              Sentara Medicaid
-            </li>
-            <li style={{ marginBottom: '1rem', paddingLeft: '1.5rem', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#9dc7e8', fontWeight: 'bold' }}>✓</span>
-              Optima
-            </li>
-            <li style={{ marginBottom: '1rem', paddingLeft: '1.5rem', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#9dc7e8', fontWeight: 'bold' }}>✓</span>
-              Aetna
-            </li>
-            <li style={{ marginBottom: '1rem', paddingLeft: '1.5rem', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#9dc7e8', fontWeight: 'bold' }}>✓</span>
-              Aetna Medicaid
-            </li>
-            <li style={{ marginBottom: '1rem', paddingLeft: '1.5rem', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#9dc7e8', fontWeight: 'bold' }}>✓</span>
-              Cigna
-            </li>
-            <li style={{ marginBottom: '1rem', paddingLeft: '1.5rem', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#9dc7e8', fontWeight: 'bold' }}>✓</span>
-              Optum
-            </li>
-            <li style={{ marginBottom: '1rem', paddingLeft: '1.5rem', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#9dc7e8', fontWeight: 'bold' }}>✓</span>
-              United Healthcare
-            </li>
-            <li style={{ marginBottom: '1rem', paddingLeft: '1.5rem', position: 'relative' }}>
-              <span style={{ position: 'absolute', left: 0, color: '#9dc7e8', fontWeight: 'bold' }}>✓</span>
-              United Community Care
-            </li>
-          </ul>
-          <div style={{ textAlign: 'center' }}>
+            <p style={{ fontSize: '1.2rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '2rem' }}>
+              Our services are offered on a <strong>private-pay basis</strong> at this time. Clients receive a comprehensive superbill that may be submitted to their insurance provider for possible out-of-network reimbursement, depending on individual plan benefits.
+            </p>
+            <p style={{ fontSize: '1.2rem', color: '#4a4a4a', lineHeight: '1.9' }}>
+              The practice is in the process of pursuing insurance credentialing, and we will notify families as new options become available.
+            </p>
+          </div>
+          <div style={{ textAlign: 'center', marginTop: '3rem' }}>
             <a href="#contact" style={{
-              background: '#ffb84d',
+              background: '#ff8447',
               color: '#fff',
               padding: '0.9rem 2.5rem',
               borderRadius: '25px',
               textDecoration: 'none',
               fontWeight: '700',
               fontSize: '1.05rem',
-              boxShadow: '0 4px 15px rgba(255,184,77,0.3)',
+              boxShadow: '0 4px 15px rgba(255,132,71,0.3)',
               transition: 'transform 0.2s',
               display: 'inline-block'
             }}>Contact Us</a>
@@ -571,35 +526,36 @@ function App() {
       </section>
 
       {/* Get Started Section */}
+      {/* Get Started Section */}
       <section id="contact" style={{
-        background: '#fff',
+        background: '#fdfae6',
         padding: '5rem 2rem'
       }}>
         <div style={{
           maxWidth: '1200px',
           margin: '0 auto'
         }}>
-          <h2 style={{ fontSize: '2.5rem', color: '#5a8a6f', marginBottom: '3rem', textAlign: 'center', fontWeight: '700' }}>
+          <h2 style={{ fontSize: '2.5rem', color: '#99acff', marginBottom: '3rem', textAlign: 'center', fontWeight: '700' }}>
             Get Started!
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2.5rem', marginBottom: '3rem' }}>
-            <div style={{ textAlign: 'center', padding: '2.5rem', background: '#fff9f0', borderRadius: '16px', boxShadow: '0 6px 25px rgba(255,184,77,0.15)', border: '2px solid #ffe9c7' }}>
+            <div style={{ textAlign: 'center', padding: '2.5rem', background: '#fff', borderRadius: '16px', boxShadow: '0 6px 25px rgba(255,132,71,0.2)', border: '2px solid #ff8447' }}>
               <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📅</div>
-              <h3 style={{ fontSize: '1.6rem', color: '#5a8a6f', marginBottom: '1rem', fontWeight: '700' }}>Schedule an Evaluation</h3>
+              <h3 style={{ fontSize: '1.6rem', color: '#99acff', marginBottom: '1rem', fontWeight: '700' }}>Schedule an Evaluation</h3>
               <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9' }}>
-                Reach out to us via phone or contact form. Call us at <a href="tel:7575673649" style={{ color: '#ffb84d', fontWeight: 'bold', textDecoration: 'none' }}>(757) 567-3649</a>
+                Reach out to us via phone or contact form. Call us at <a href="tel:7575673649" style={{ color: '#ff8447', fontWeight: 'bold', textDecoration: 'none' }}>(757) 567-3649</a>
               </p>
             </div>
-            <div style={{ textAlign: 'center', padding: '2.5rem', background: '#f9fcff', borderRadius: '16px', boxShadow: '0 6px 25px rgba(157,199,232,0.15)', border: '2px solid #d6ebf5' }}>
-              <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📋</div>
-              <h3 style={{ fontSize: '1.6rem', color: '#5a8a6f', marginBottom: '1rem', fontWeight: '700' }}>Request a Referral</h3>
+            <div style={{ textAlign: 'center', padding: '2.5rem', background: '#fff', borderRadius: '16px', boxShadow: '0 6px 25px rgba(153,172,255,0.2)', border: '2px solid #99acff' }}>
+              <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📞</div>
+              <h3 style={{ fontSize: '1.6rem', color: '#99acff', marginBottom: '1rem', fontWeight: '700' }}>Free Consultation</h3>
               <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9' }}>
-                If using insurance, you need a referral for speech therapy from your doctor. Please have your doctor fax to us at <a href="tel:8665982999" style={{ color: '#9dc7e8', fontWeight: 'bold', textDecoration: 'none' }}>(866) 598-2999</a>
+                We offer a complimentary phone consultation to discuss your child's needs, answer questions about our approach, and determine if our services are the right fit for your family.
               </p>
             </div>
-            <div style={{ textAlign: 'center', padding: '2.5rem', background: '#f7fcf5', borderRadius: '16px', boxShadow: '0 6px 25px rgba(180,212,168,0.15)', border: '2px solid #d9ecd1' }}>
+            <div style={{ textAlign: 'center', padding: '2.5rem', background: '#fff', borderRadius: '16px', boxShadow: '0 6px 25px rgba(176,218,182,0.2)', border: '2px solid #B0DAB6' }}>
               <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>✍️</div>
-              <h3 style={{ fontSize: '1.6rem', color: '#5a8a6f', marginBottom: '1rem', fontWeight: '700' }}>Intake Form</h3>
+              <h3 style={{ fontSize: '1.6rem', color: '#99acff', marginBottom: '1rem', fontWeight: '700' }}>Intake Form</h3>
               <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9' }}>
                 After our consultation, we will provide you with an intake form with a series of questions and all required documentation. After that, time to get scheduled!
               </p>
@@ -607,14 +563,14 @@ function App() {
           </div>
           <div style={{ textAlign: 'center' }}>
             <a href="tel:7575673649" style={{
-              background: '#ffb84d',
+              background: '#ff8447',
               color: '#fff',
               padding: '1.1rem 3rem',
               borderRadius: '30px',
               textDecoration: 'none',
               fontWeight: '700',
               fontSize: '1.15rem',
-              boxShadow: '0 6px 20px rgba(255,184,77,0.4)',
+              boxShadow: '0 6px 20px rgba(255,132,71,0.4)',
               transition: 'transform 0.2s',
               display: 'inline-block'
             }}>Schedule Now</a>
@@ -624,7 +580,7 @@ function App() {
 
       {/* Footer */}
       <footer style={{
-        background: 'linear-gradient(135deg, #b4d4a8 0%, #9dc7e8 100%)',
+        background: 'linear-gradient(135deg, #B0DAB6 0%, #99acff 100%)',
         color: '#fff',
         padding: '3rem 2rem',
         textAlign: 'center'

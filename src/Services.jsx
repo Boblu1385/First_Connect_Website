@@ -12,7 +12,7 @@ function Services() {
     <div style={{ fontFamily: "'Quicksand', system-ui, -apple-system, sans-serif" }}>
       {/* Navigation Bar */}
       <nav style={{
-        background: 'linear-gradient(135deg, #b4d4a8 0%, #9dc7e8 100%)',
+        background: 'linear-gradient(135deg, #B0DAB6 0%, #99acff 100%)',
         boxShadow: '0 2px 10px rgba(0,0,0,0.05)',
         padding: '1.2rem 2rem',
         position: 'sticky',
@@ -63,13 +63,13 @@ function Services() {
             transition: 'color 0.3s',
             borderBottom: '2px solid #fff'
           }}>Services</a>
-          <a href="/#insurance" style={{
+          <a href="/#payments" style={{
             color: '#fff',
             textDecoration: 'none',
             fontWeight: '600',
             fontSize: '1rem',
             transition: 'color 0.3s'
-          }}>Insurance</a>
+          }}>Payments</a>
           <a href="/#resources" style={{
             color: '#fff',
             textDecoration: 'none',
@@ -89,7 +89,7 @@ function Services() {
 
       {/* Logo and Clinic Name Section */}
       <section style={{
-        background: '#fff',
+        background: '#fdfae6',
         padding: '3rem 2rem 2rem',
         textAlign: 'center'
       }}>
@@ -99,8 +99,8 @@ function Services() {
           alignItems: 'center',
           gap: '1rem'
         }}>
-          <img src={logoImage} alt="First Connect Logo" style={{ height: '120px', width: '120px', borderRadius: '50%', background: '#b4d4a8', padding: '8px' }} />
-          <h1 style={{ fontSize: '2rem', color: '#5a8a6f', margin: 0, fontWeight: '700' }}>
+          <img src={logoImage} alt="First Connect Logo" style={{ height: '120px', width: '120px', borderRadius: '50%', background: '#B0DAB6', padding: '8px' }} />
+          <h1 style={{ fontSize: '2rem', color: '#99acff', margin: 0, fontWeight: '700' }}>
             First Connect Pediatric Therapy, PLLC
           </h1>
         </div>
@@ -108,7 +108,7 @@ function Services() {
 
       {/* Hero Section */}
       <section style={{
-        background: 'linear-gradient(135deg, #b4d4a8 0%, #9dc7e8 100%)',
+        background: 'linear-gradient(135deg, #B0DAB6 0%, #99acff 100%)',
         padding: '3rem 2rem',
         textAlign: 'center'
       }}>
@@ -122,14 +122,14 @@ function Services() {
 
       {/* Evaluations Section */}
       <section style={{
-        background: '#fff',
+        background: '#fdfae6',
         padding: '5rem 2rem'
       }}>
         <div style={{
           maxWidth: '900px',
           margin: '0 auto'
         }}>
-          <h2 style={{ fontSize: '2.5rem', color: '#5a8a6f', marginBottom: '2rem', fontWeight: '700' }}>
+          <h2 style={{ fontSize: '2.5rem', color: '#99acff', marginBottom: '2rem', fontWeight: '700' }}>
             Evaluations
           </h2>
           <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
@@ -159,14 +159,14 @@ function Services() {
 
       {/* Individual Speech Therapy Section */}
       <section style={{
-        background: '#f9fcff',
+        background: '#fdfae6',
         padding: '5rem 2rem'
       }}>
         <div style={{
           maxWidth: '900px',
           margin: '0 auto'
         }}>
-          <h2 style={{ fontSize: '2.5rem', color: '#5a8a6f', marginBottom: '2rem', fontWeight: '700' }}>
+          <h2 style={{ fontSize: '2.5rem', color: '#99acff', marginBottom: '2rem', fontWeight: '700' }}>
             Individual Speech Therapy
           </h2>
           <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
@@ -207,7 +207,7 @@ function Services() {
 
       {/* Specialty Services Header */}
       <section style={{
-        background: 'linear-gradient(135deg, #b4d4a8 0%, #9dc7e8 100%)',
+        background: 'linear-gradient(135deg, #B0DAB6 0%, #99acff 100%)',
         padding: '3rem 2rem',
         textAlign: 'center'
       }}>
@@ -218,14 +218,14 @@ function Services() {
 
       {/* Articulation and Speech Sound Disorders */}
       <section style={{
-        background: '#fff',
+        background: '#fdfae6',
         padding: '5rem 2rem'
       }}>
         <div style={{
           maxWidth: '900px',
           margin: '0 auto'
         }}>
-          <h3 style={{ fontSize: '2rem', color: '#5a8a6f', marginBottom: '1.5rem', fontWeight: '700' }}>
+          <h3 style={{ fontSize: '2rem', color: '#99acff', marginBottom: '1.5rem', fontWeight: '700' }}>
             Articulation and Speech Sound Disorders
           </h3>
           <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
@@ -248,14 +248,14 @@ function Services() {
 
       {/* Childhood Apraxia of Speech */}
       <section style={{
-        background: '#f7fcf5',
+        background: '#fdfae6',
         padding: '5rem 2rem'
       }}>
         <div style={{
           maxWidth: '900px',
           margin: '0 auto'
         }}>
-          <h3 style={{ fontSize: '2rem', color: '#5a8a6f', marginBottom: '1.5rem', fontWeight: '700' }}>
+          <h3 style={{ fontSize: '2rem', color: '#99acff', marginBottom: '1.5rem', fontWeight: '700' }}>
             Childhood Apraxia of Speech
           </h3>
           <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
@@ -278,14 +278,14 @@ function Services() {
 
       {/* AAC */}
       <section style={{
-        background: '#f9fcff',
+        background: '#fdfae6',
         padding: '5rem 2rem'
       }}>
         <div style={{
           maxWidth: '900px',
           margin: '0 auto'
         }}>
-          <h3 style={{ fontSize: '2rem', color: '#5a8a6f', marginBottom: '1.5rem', fontWeight: '700' }}>
+          <h3 style={{ fontSize: '2rem', color: '#99acff', marginBottom: '1.5rem', fontWeight: '700' }}>
             Augmentative and Alternative Communication (AAC)
           </h3>
           <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
@@ -311,14 +311,14 @@ function Services() {
 
       {/* Autism and Gestalt Language Processors */}
       <section style={{
-        background: '#fff',
+        background: '#fdfae6',
         padding: '5rem 2rem'
       }}>
         <div style={{
           maxWidth: '900px',
           margin: '0 auto'
         }}>
-          <h3 style={{ fontSize: '2rem', color: '#5a8a6f', marginBottom: '1.5rem', fontWeight: '700' }}>
+          <h3 style={{ fontSize: '2rem', color: '#99acff', marginBottom: '1.5rem', fontWeight: '700' }}>
             Autism and Gestalt Language Processors
           </h3>
           <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
@@ -343,14 +343,14 @@ function Services() {
 
       {/* Feeding/Picky Eating */}
       <section style={{
-        background: '#f7fcf5',
+        background: '#fdfae6',
         padding: '5rem 2rem'
       }}>
         <div style={{
           maxWidth: '900px',
           margin: '0 auto'
         }}>
-          <h3 style={{ fontSize: '2rem', color: '#5a8a6f', marginBottom: '1.5rem', fontWeight: '700' }}>
+          <h3 style={{ fontSize: '2rem', color: '#99acff', marginBottom: '1.5rem', fontWeight: '700' }}>
             Feeding & Picky Eating
           </h3>
           <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9' }}>
@@ -361,7 +361,7 @@ function Services() {
 
       {/* Footer */}
       <footer style={{
-        background: 'linear-gradient(135deg, #b4d4a8 0%, #9dc7e8 100%)',
+        background: 'linear-gradient(135deg, #B0DAB6 0%, #99acff 100%)',
         color: '#fff',
         padding: '3rem 2rem',
         textAlign: 'center'

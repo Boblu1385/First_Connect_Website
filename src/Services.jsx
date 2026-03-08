@@ -9,7 +9,7 @@ function Services() {
   };
 
   return (
-    <div style={{ fontFamily: "'Montserrat', system-ui, -apple-system, sans-serif" }}>
+    <div style={{ fontFamily: "'Quicksand', system-ui, -apple-system, sans-serif" }}>
       {/* Navigation Bar */}
       <nav style={{
         background: 'linear-gradient(135deg, #b4d4a8 0%, #9dc7e8 100%)',

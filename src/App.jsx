@@ -35,36 +35,63 @@ function App() {
       <section style={{
         background: '#fff',
         padding: '3rem 2rem 2rem',
-        textAlign: 'center'
+        textAlign: 'center',
+        position: 'relative'
       }}>
-        <div style={{ 
-          position: 'relative', 
-          maxWidth: '1200px', 
+        <div style={{
+          maxWidth: '1200px',
           margin: '0 auto',
           display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center'
+          alignItems: 'center',
+          gap: '3rem'
         }}>
-          <img src={playtimeImage} alt="Playtime" style={{ 
-            width: '100%',
-            maxWidth: '800px',
-            height: 'auto', 
-            borderRadius: '16px', 
-            boxShadow: '0 4px 15px rgba(90,138,111,0.15)'
-          }} />
           <div style={{ 
-            position: 'absolute',
-            bottom: '0',
-            display: 'flex', 
-            flexDirection: 'column', 
-            alignItems: 'center', 
-            gap: '1rem',
-            background: 'transparent',
-            padding: '2rem 3rem',
-            borderRadius: '16px'
+            position: 'relative', 
+            flex: 1,
+            height: '400px',
+            overflow: 'hidden',
+            borderRadius: '16px',
+            boxShadow: '0 4px 15px rgba(90,138,111,0.15)'
           }}>
-            <img src={logoImage} alt="Clinic Logo" style={{ height: '120px', width: '120px', borderRadius: '50%', background: '#b4d4a8', padding: '8px' }} />
-            <h2 style={{ fontSize: '2rem', fontWeight: '700', color: '#5a8a6f', margin: 0 }}>First Connect Pediatric Therapy</h2>
+            <img src={playtimeImage} alt="Playtime" style={{ 
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              objectPosition: 'center 25%',
+              display: 'block'
+            }} />
+            <div style={{ 
+              position: 'absolute',
+              bottom: '0.5rem',
+              left: '50%',
+              transform: 'translateX(-50%)',
+              display: 'flex', 
+              flexDirection: 'column', 
+              alignItems: 'center', 
+              gap: '1rem',
+              background: 'transparent',
+              padding: '1rem 2rem',
+              borderRadius: '16px'
+            }}>
+              <h2 style={{ 
+                fontSize: '2rem', 
+                fontWeight: '700', 
+                color: '#5a8a6f', 
+                margin: 0, 
+                whiteSpace: 'nowrap',
+                background: 'rgba(255, 255, 255, 0.6)',
+                padding: '0.75rem 2rem',
+                borderRadius: '12px'
+              }}>First Connect Pediatric Therapy</h2>
+            </div>
+          </div>
+          <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            gap: '1rem'
+          }}>
+            <img src={logoImage} alt="Clinic Logo" style={{ height: '180px', width: '180px', borderRadius: '50%', background: '#b4d4a8', padding: '12px' }} />
           </div>
         </div>
       </section>

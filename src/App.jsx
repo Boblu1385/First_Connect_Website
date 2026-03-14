@@ -3,10 +3,79 @@ import './App.css'
 import logoImage from '../logo_images/Logo Concept-2026-02-01-White.png'
 import groupJoyImage from '../logo_images/GroupJoy.jpg'
 import playtimeImage from '../logo_images/Playtime.jpg'
+import ccpSlpLogo from '../logo_images/CCP-SLP-logo.png'
+import childApraxiaLogo from '../logo_images/Child Apraxia Treatment.png'
+import meaningfulSpeechLogo from '../logo_images/Meaningful speech nla trained clinician logo.png'
+import vaDeptHealthLogo from '../logo_images/Virginia Department of Health Professions.png'
 
 function App() {
   return (
     <>
+      {/* Mobile Responsive Styles */}
+      <style>{`
+        @media (max-width: 768px) {
+          header {
+            padding: 1rem 1rem !important;
+          }
+          header nav {
+            gap: 0.8rem !important;
+            font-size: 0.9rem;
+          }
+          header nav a {
+            padding: 0.4rem 0.6rem !important;
+          }
+          section {
+            padding: 2.5rem 1rem !important;
+          }
+          h1 {
+            font-size: 1.8rem !important;
+          }
+          h2 {
+            font-size: 1.6rem !important;
+          }
+          h3 {
+            font-size: 1.4rem !important;
+          }
+          .logo-section-content {
+            flex-direction: column !important;
+            gap: 1.5rem !important;
+          }
+          .logo-image-container {
+            height: 250px !important;
+          }
+          .logo-title {
+            font-size: 1.3rem !important;
+            padding: 0.5rem 1rem !important;
+            white-space: normal !important;
+            text-align: center;
+          }
+          .welcome-grid {
+            grid-template-columns: 1fr !important;
+            gap: 2rem !important;
+          }
+          .three-column-grid {
+            grid-template-columns: 1fr !important;
+            gap: 1.5rem !important;
+          }
+          .two-column-grid {
+            grid-template-columns: 1fr !important;
+            gap: 1.5rem !important;
+          }
+          .get-started-grid {
+            grid-template-columns: 1fr !important;
+            gap: 1.5rem !important;
+          }
+          .credentials-grid {
+            grid-template-columns: 1fr !important;
+            gap: 2rem !important;
+          }
+          .credentials-grid img {
+            height: 80px !important;
+            width: 160px !important;
+          }
+        }
+      `}</style>
+      
       {/* Navigation Bar */}
       <header style={{
         display: 'flex',
@@ -38,14 +107,14 @@ function App() {
         textAlign: 'center',
         position: 'relative'
       }}>
-        <div style={{
+        <div className="logo-section-content" style={{
           maxWidth: '1200px',
           margin: '0 auto',
           display: 'flex',
           alignItems: 'center',
           gap: '3rem'
         }}>
-          <div style={{ 
+          <div className="logo-image-container" style={{ 
             position: 'relative', 
             flex: 1,
             height: '400px',
@@ -73,7 +142,7 @@ function App() {
               padding: '1rem 2rem',
               borderRadius: '16px'
             }}>
-              <h2 style={{ 
+              <h2 className="logo-title" style={{ 
                 fontSize: '2rem', 
                 fontWeight: '700', 
                 color: '#fff', 
@@ -113,7 +182,7 @@ function App() {
         background: '#fdfae6',
         padding: '5rem 2rem'
       }}>
-        <div style={{
+        <div className="welcome-grid" style={{
           maxWidth: '1200px',
           margin: '0 auto',
           display: 'grid',
@@ -166,7 +235,7 @@ function App() {
           maxWidth: '1400px',
           margin: '0 auto'
         }}>
-          <div style={{
+          <div className="three-column-grid" style={{
             display: 'grid',
             gridTemplateColumns: '1fr 1fr 1fr',
             gap: '2.5rem',
@@ -312,7 +381,7 @@ function App() {
           maxWidth: '1200px',
           margin: '0 auto'
         }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem' }}>
+          <div className="two-column-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem' }}>
             {/* What is ADOS-2 */}
             <div style={{ background: '#fff', padding: '2.5rem', borderRadius: '16px', boxShadow: '0 6px 25px rgba(153,172,255,0.2)', border: '2px solid #99acff' }}>
               <h3 style={{ fontSize: '1.9rem', color: '#99acff', marginBottom: '1.2rem', fontWeight: '700' }}>
@@ -364,16 +433,19 @@ function App() {
               Owner, Speech-Language Pathologist
             </p>
             <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
-              With over seven years of experience as a speech-language pathologist, Cherie Rose brings a unique blend of professional passion to her practice. Her journey began in 2006 when she noticed her youngest son was not meeting the same verbal milestones as her eldest. After being referred to a speech therapist by her pediatrician, Cherie found her calling.
+              Cherie Rose, MS, CCC-SLP, is a board-certified speech-language pathologist through the American Speech-Language-Hearing Association (ASHA) and holds a Virginia state license. She earned her Bachelor’s degree in Speech-Language Pathology with a minor in Special Education from Old Dominion University in 2015, followed by a Master’s degree in Communicative Sciences and Disorders from Hampton University in 2018.
             </p>
             <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
-              Having navigated the process first as a mother, Cherie possesses a profound understanding of the frustration, hopelessness, and confusion families often feel. This lived experience allows her to offer deep empathy alongside proven clinical strategies.
+              With over seven years of clinical experience, Cherie brings both professional expertise and deep personal insight to her work with children and families. Her passion for speech-language pathology began in 2006, when she recognized that her youngest son was not meeting the same verbal milestones as her eldest. After a referral to speech therapy by her pediatrician, Cherie discovered her calling.
             </p>
             <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '0' }}>
-              Cherie earned her Bachelor's degree in Speech-Language Pathology with a minor in Special Education from Old Dominion University in 2015, followed by a Master's degree in Communicative Sciences and Disorders from Hampton University in 2018.
+              Having experienced the therapy journey firsthand as a parent, Cherie has a profound understanding of the frustration, uncertainty, and emotional challenges families often face. This lived experience allows her to approach therapy with empathy, compassion, and evidence-based clinical strategies tailored to each child’s unique needs.
             </p>
             <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '0' }}>
-              Cherie enjoys hiking a new trail, strolling along the beach or taking long walks with her dogs. Most of all, Cherie cherishes spending time with her family, exploring the stunning Virginia mountains with her husband and boys.
+              Cherie is committed to providing family-centered, strengths-based care that supports meaningful communication and long-term success for every child she serves.
+            </p>
+            <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '0' }}>
+              Outside of work, Cherie enjoys hiking a new trail, strolling along the beach or taking long walks with her dogs. Most of all, Cherie cherishes spending time with her family, exploring the stunning Virginia mountains with her husband and boys.
             </p>
           </div>
 
@@ -394,9 +466,11 @@ function App() {
               Lindsey Lewandowski, CCC-SLP, is a board certified speech language pathologist through the American Speech Language Hearing Association (ASHA) and holds a Virgina state license. She earned her undergraduate degree in sociology from the University of Virginia in 2006 where she played Division 1 field hockey.  In 2008, her dad suffered a major stroke and needed intensive speech therapy. Through this experience, she learned of speech therapy and went on to study speech pathology at Old Dominion University where she earned her Master of Science in Education in 2012.
             </p>
             <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
-              With 14 years of clinical experience, Lindsey has worked in a variety of settings including public schools, early intervention, and outpatient settings. Her background includes extensive work with children presenting with a wide range of communication needs.             </p>
+              With 14 years of clinical experience, Lindsey has worked in a variety of settings including public schools, early intervention, and outpatient settings. Her background includes extensive work with children presenting with a wide range of communication needs including Autism, Apraxia, AAC, Receptive/Expressive Language Delays, Articulation/Phonological Disorders, and more. 
+            </p>
             <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
-              Lindsey is dedicated to a child led, play based, and strengths focused approach that supports authentic communication and meaningful growth. She is committed to ongoing professional development and continually seeks out advanced training to stay current with evidence based practices in the field.            </p>
+              Lindsey is dedicated to using a child-led, play-based approach that focuses on building trust and connection. She is committed to ongoing professional development and continually seeks out advanced training to stay current with evidence based practices in the field.
+            </p>
             <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
               Drawing on her experience as a collegiate field hockey athlete at the University of Virginia, she brings a strong work ethic and energetic drive to every endeavor. 
             </p>
@@ -538,7 +612,7 @@ function App() {
           <h2 style={{ fontSize: '2.5rem', color: '#99acff', marginBottom: '3rem', textAlign: 'center', fontWeight: '700' }}>
             Get Started!
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2.5rem', marginBottom: '3rem' }}>
+          <div className="get-started-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2.5rem', marginBottom: '3rem' }}>
             <div style={{ textAlign: 'center', padding: '2.5rem', background: '#fff', borderRadius: '16px', boxShadow: '0 6px 25px rgba(255,132,71,0.2)', border: '2px solid #ff8447' }}>
               <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📅</div>
               <h3 style={{ fontSize: '1.6rem', color: '#99acff', marginBottom: '1rem', fontWeight: '700' }}>Schedule an Evaluation</h3>
@@ -575,6 +649,44 @@ function App() {
               display: 'inline-block'
             }}>Schedule Now</a>
           </div>
+        </div>
+      </section>
+
+      {/* Credentials Section */}
+      <section style={{
+        background: '#fff',
+        padding: '3rem 2rem',
+        textAlign: 'center'
+      }}>
+        <div className="credentials-grid" style={{ 
+          maxWidth: '800px', 
+          margin: '0 auto',
+          display: 'grid',
+          gridTemplateColumns: '1fr 1fr',
+          gap: '3rem',
+          alignItems: 'center',
+          justifyItems: 'center'
+        }}>
+          <img src={ccpSlpLogo} alt="CCC-SLP Certified" style={{ 
+            height: '150px',
+            width: '300px',
+            objectFit: 'contain'
+          }} />
+          <img src={childApraxiaLogo} alt="Child Apraxia Treatment" style={{ 
+            height: '150px',
+            width: '300px',
+            objectFit: 'contain'
+          }} />
+          <img src={meaningfulSpeechLogo} alt="Meaningful Speech NLA Trained Clinical" style={{ 
+            height: '150px',
+            width: '300px',
+            objectFit: 'contain'
+          }} />
+          <img src={vaDeptHealthLogo} alt="Virginia Department of Health Professions" style={{ 
+            height: '150px',
+            width: '300px',
+            objectFit: 'contain'
+          }} />
         </div>
       </section>
 

@@ -1,4 +1,8 @@
 import logoImage from '../logo_images/Logo Concept-2026-02-01-White.png';
+import ccpSlpLogo from '../logo_images/CCP-SLP-logo.png';
+import childApraxiaLogo from '../logo_images/Child Apraxia Treatment.png';
+import meaningfulSpeechLogo from "../logo_images/Meaningful speech nla trained clinician logo.png";
+import vaDeptHealthLogo from "../logo_images/Virginia Department of Health Professions.png";
 
 function Services() {
   const scrollToSection = (sectionId) => {
@@ -10,6 +14,42 @@ function Services() {
 
   return (
     <div style={{ fontFamily: "'Quicksand', system-ui, -apple-system, sans-serif" }}>
+      {/* Mobile Responsive Styles */}
+      <style>{`
+        @media (max-width: 768px) {
+          nav {
+            padding: 1rem !important;
+          }
+          nav > div {
+            flex-direction: column !important;
+            gap: 0.8rem !important;
+          }
+          nav a {
+            font-size: 0.9rem !important;
+          }
+          section {
+            padding: 2.5rem 1rem !important;
+          }
+          h1 {
+            font-size: 1.8rem !important;
+          }
+          h2 {
+            font-size: 1.6rem !important;
+          }
+          h3 {
+            font-size: 1.4rem !important;
+          }
+          .credentials-grid {
+            grid-template-columns: 1fr !important;
+            gap: 2rem !important;
+          }
+          .credentials-grid img {
+            height: 80px !important;
+            width: 160px !important;
+          }
+        }
+      `}</style>
+      
       {/* Navigation Bar */}
       <nav style={{
         background: 'linear-gradient(135deg, #B0DAB6 0%, #99acff 100%)',
@@ -356,6 +396,44 @@ function Services() {
           <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9' }}>
             Is your child struggling to expand their diet from chicken nuggets and pizza? Are mealtimes feeling stressful and overwhelming? Feeding therapy supports children who struggle with picky or restrictive eating by helping them feel safe, confident, and comfortable around food. Through play-based, child-centered strategies, we gently expand food variety while building positive mealtime experiences, oral motor skills and sensory tolerance—without pressure or force. We also address myofunctional deficits such as mouth breathing, tongue thrust, or difficulty moving their muscles which may affect swallowing solids or multi-textured foods.
           </p>
+        </div>
+      </section>
+
+      {/* Credentials Section */}
+      <section style={{
+        background: '#fff',
+        padding: '3rem 2rem',
+        textAlign: 'center'
+      }}>
+        <div className="credentials-grid" style={{ 
+          maxWidth: '800px', 
+          margin: '0 auto',
+          display: 'grid',
+          gridTemplateColumns: '1fr 1fr',
+          gap: '3rem',
+          alignItems: 'center',
+          justifyItems: 'center'
+        }}>
+          <img src={ccpSlpLogo} alt="CCC-SLP Certified" style={{ 
+            height: '150px',
+            width: '300px',
+            objectFit: 'contain'
+          }} />
+          <img src={childApraxiaLogo} alt="Child Apraxia Treatment" style={{ 
+            height: '150px',
+            width: '300px',
+            objectFit: 'contain'
+          }} />
+          <img src={meaningfulSpeechLogo} alt="Meaningful Speech NLA Trained Clinical" style={{ 
+            height: '150px',
+            width: '300px',
+            objectFit: 'contain'
+          }} />
+          <img src={vaDeptHealthLogo} alt="Virginia Department of Health Professions" style={{ 
+            height: '150px',
+            width: '300px',
+            objectFit: 'contain'
+          }} />
         </div>
       </section>
 

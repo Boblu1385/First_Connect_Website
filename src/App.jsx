@@ -7,6 +7,8 @@ import ccpSlpLogo from '../logo_images/CCP-SLP-logo.png'
 import childApraxiaLogo from '../logo_images/Child Apraxia Treatment.png'
 import meaningfulSpeechLogo from '../logo_images/Meaningful speech nla trained clinician logo.png'
 import vaDeptHealthLogo from '../logo_images/Virginia Department of Health Professions.png'
+import cherieFamilyImage from '../logo_images/Cherie_Family_Photo.jpg'
+import lindseyFamilyImage from '../logo_images/Lindsey_Family_Photo.jpg'
 
 function App() {
   return (
@@ -72,6 +74,11 @@ function App() {
           .credentials-grid img {
             height: 80px !important;
             width: 160px !important;
+          }
+          .cherie-photo {
+            float: none !important;
+            width: 100% !important;
+            margin: 0 0 1.5rem 0 !important;
           }
         }
       `}</style>
@@ -431,8 +438,21 @@ function App() {
             </h3>
             <p style={{ fontSize: '1.1rem', color: '#B0DAB6', marginBottom: '1.8rem', fontStyle: 'italic', fontWeight: '600' }}>
               Owner, Speech-Language Pathologist
-            </p>
-            <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
+            </p>            <img 
+              src={cherieFamilyImage} 
+              alt="Cherie with her family" 
+              className="cherie-photo"
+              style={{
+                float: 'right',
+                width: '48%',
+                height: 'auto',
+                marginLeft: '2rem',
+                marginBottom: '1rem',
+                borderRadius: '12px',
+                boxShadow: '0 4px 15px rgba(176,218,182,0.3)',
+                border: '2px solid #ff8447'
+              }} 
+            />            <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
               Cherie Rose, MS, CCC-SLP, is a board-certified speech-language pathologist through the American Speech-Language-Hearing Association (ASHA) and holds a Virginia state license. She earned her Bachelor’s degree in Speech-Language Pathology with a minor in Special Education from Old Dominion University in 2015, followed by a Master’s degree in Communicative Sciences and Disorders from Hampton University in 2018.
             </p>
             <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
@@ -462,6 +482,21 @@ function App() {
             <p style={{ fontSize: '1.1rem', color: '#B0DAB6', marginBottom: '1.8rem', fontStyle: 'italic', fontWeight: '600' }}>
               Owner, Speech-Language Pathologist
             </p>
+            <img 
+              src={lindseyFamilyImage} 
+              alt="Lindsey with her family" 
+              className="lindsey-photo"
+              style={{
+                float: 'right',
+                width: '48%',
+                height: 'auto',
+                marginLeft: '2rem',
+                marginBottom: '1rem',
+                borderRadius: '12px',
+                boxShadow: '0 4px 15px rgba(176,218,182,0.3)',
+                border: '2px solid #ff8447'
+              }} 
+            />
             <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
               Lindsey Lewandowski, CCC-SLP, is a board certified speech language pathologist through the American Speech Language Hearing Association (ASHA) and holds a Virgina state license. She earned her undergraduate degree in sociology from the University of Virginia in 2006 where she played Division 1 field hockey.  In 2008, her dad suffered a major stroke and needed intensive speech therapy. Through this experience, she learned of speech therapy and went on to study speech pathology at Old Dominion University where she earned her Master of Science in Education in 2012.
             </p>

@@ -7,6 +7,8 @@ import vaDeptHealthLogo from "../logo_images/Virginia Department of Health Profe
 import developmentMilestonesPdf from '../pdfs/Development Milestones.pdf'
 import speechSoundsPdf from '../pdfs/Speech Sounds.pdf'
 import bubbleGirlImage from '../logo_images/Bubble_Girl.png'
+import eatingImage from '../logo_images/Eating.jpg'
+import tunnelImage from '../logo_images/Tunnel.jpg'
 
 function Services() {
   const [showMilestonesDropdown, setShowMilestonesDropdown] = useState(false)
@@ -451,6 +453,21 @@ function Services() {
           <h3 style={{ fontSize: '2rem', color: '#99acff', marginBottom: '1.5rem', fontWeight: '700' }}>
             Autism and Gestalt Language Processors
           </h3>
+          <img 
+            src={tunnelImage} 
+            alt="Child playing in a tunnel" 
+            className="specialty-photo"
+            style={{
+              float: 'right',
+              width: '40%',
+              height: 'auto',
+              marginRight: '2rem',
+              marginBottom: '1rem',
+              borderRadius: '12px',
+              boxShadow: '0 4px 15px rgba(176,218,182,0.3)',
+              border: '2px solid #B0DAB6'
+            }} 
+          />
           <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
             We have experience supporting children who communicate using echolalia and scripted language. Through engaging, child-directed play, we validate and respect these scripts while gently modeling flexible language to support progress through the Natural Language Acquisition (NLA) framework—from echoed phrases toward self-generated speech. Speech therapy can help your child:
           </p>
@@ -483,6 +500,21 @@ function Services() {
           <h3 style={{ fontSize: '2rem', color: '#99acff', marginBottom: '1.5rem', fontWeight: '700' }}>
             Feeding & Picky Eating
           </h3>
+          <img 
+            src={eatingImage} 
+            alt="Child eating" 
+            className="specialty-photo"
+            style={{
+              float: 'left',
+              width: '30%',
+              height: 'auto',
+              marginRight: '2rem',
+              marginBottom: '1rem',
+              borderRadius: '12px',
+              boxShadow: '0 4px 15px rgba(176,218,182,0.3)',
+              border: '2px solid #99acff'
+            }} 
+          />
           <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9' }}>
             Is your child struggling to expand their diet from chicken nuggets and pizza? Are mealtimes feeling stressful and overwhelming? Feeding therapy supports children who struggle with picky or restrictive eating by helping them feel safe, confident, and comfortable around food. Through play-based, child-centered strategies, we gently expand food variety while building positive mealtime experiences, oral motor skills and sensory tolerance—without pressure or force. We also address myofunctional deficits such as mouth breathing, tongue thrust, or difficulty moving their muscles which may affect swallowing solids or multi-textured foods.
           </p>

@@ -9,8 +9,12 @@ import meaningfulSpeechLogo from '../logo_images/Meaningful speech nla trained c
 import vaDeptHealthLogo from '../logo_images/Virginia Department of Health Professions.png'
 import cherieFamilyImage from '../logo_images/Cherie_Family_Photo.jpg'
 import lindseyFamilyImage from '../logo_images/Lindsey_Family_Photo.jpg'
+import developmentMilestonesPdf from '../pdfs/Development Milestones.pdf'
+import speechSoundsPdf from '../pdfs/Speech Sounds.pdf'
 
 function App() {
+  const [showMilestonesDropdown, setShowMilestonesDropdown] = useState(false)
+
   return (
     <>
       {/* Mobile Responsive Styles */}
@@ -46,10 +50,12 @@ function App() {
             height: 250px !important;
           }
           .logo-title {
-            font-size: 1.3rem !important;
-            padding: 0.5rem 1rem !important;
-            white-space: normal !important;
+            font-size: 1.2rem !important;
+            padding: 0.4rem 0.5rem !important;
+            white-space: nowrap !important;
             text-align: center;
+            max-width: 100% !important;
+            width: max-content !important;
           }
           .welcome-grid {
             grid-template-columns: 1fr !important;
@@ -80,6 +86,23 @@ function App() {
             width: 100% !important;
             margin: 0 0 1.5rem 0 !important;
           }
+          .lindsey-photo {
+            float: none !important;
+            width: 100% !important;
+            margin: 0 0 1.5rem 0 !important;
+          }
+          .milestones-dropdown {
+            display: inline-block !important;
+          }
+          .milestones-trigger {
+            padding: 0.4rem 0.6rem !important;
+            font-size: 0.9rem !important;
+          }
+          .milestones-menu {
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+            min-width: 200px !important;
+          }
         }
       `}</style>
       
@@ -102,7 +125,65 @@ function App() {
           <a href="#team" style={{ padding: '0.5rem', color: '#fff', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Team</a>
           <a href="#services" style={{ padding: '0.5rem', color: '#fff', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Services</a>
           <a href="#payments" style={{ padding: '0.5rem', color: '#fff', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Payments</a>
-          <a href="/resources" style={{ padding: '0.5rem', color: '#fff', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Resources</a>
+          <div 
+            className="milestones-dropdown"
+            style={{ position: 'relative', display: 'inline-block' }}
+            onMouseEnter={() => setShowMilestonesDropdown(true)}
+            onMouseLeave={() => setShowMilestonesDropdown(false)}
+          >
+            <span className="milestones-trigger" style={{ padding: '0.5rem', color: '#fff', textDecoration: 'none', fontWeight: '600', cursor: 'pointer', display: 'inline-block' }}>
+              Development Milestones
+            </span>
+            {showMilestonesDropdown && (
+              <div className="milestones-menu" style={{
+                position: 'absolute',
+                top: 'calc(100% - 0.25rem)',
+                left: '0',
+                background: '#fff',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+                borderRadius: '8px',
+                minWidth: '220px',
+                paddingTop: '0.75rem',
+                paddingBottom: '0.5rem',
+                zIndex: 1000
+              }}>
+                <a 
+                  href={developmentMilestonesPdf} 
+                  download="Development Milestones.pdf"
+                  style={{
+                    display: 'block',
+                    padding: '0.75rem 1.25rem',
+                    color: '#4a4a4a',
+                    textDecoration: 'none',
+                    fontWeight: '600',
+                    fontSize: '0.95rem',
+                    transition: 'background 0.2s'
+                  }}
+                  onMouseEnter={(e) => e.target.style.background = '#f0f0f0'}
+                  onMouseLeave={(e) => e.target.style.background = 'transparent'}
+                >
+                  📥 Development Milestones
+                </a>
+                <a 
+                  href={speechSoundsPdf} 
+                  download="Speech Sounds.pdf"
+                  style={{
+                    display: 'block',
+                    padding: '0.75rem 1.25rem',
+                    color: '#4a4a4a',
+                    textDecoration: 'none',
+                    fontWeight: '600',
+                    fontSize: '0.95rem',
+                    transition: 'background 0.2s'
+                  }}
+                  onMouseEnter={(e) => e.target.style.background = '#f0f0f0'}
+                  onMouseLeave={(e) => e.target.style.background = 'transparent'}
+                >
+                  📥 Speech Sounds
+                </a>
+              </div>
+            )}
+          </div>
           <a href="#contact" style={{ padding: '0.5rem', color: '#fff', textDecoration: 'none', fontWeight: '600', transition: 'color 0.3s' }}>Contact</a>
         </nav>
       </header>
@@ -182,6 +263,9 @@ function App() {
         <h1 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '1rem', lineHeight: '1.3', color: '#fff' }}>
           Neurodiversity-Affirming Speech Therapy in Newport News, VA
         </h1>
+        <p style={{ fontSize: '1.2rem', fontWeight: '500', color: '#fff', marginTop: '1rem', lineHeight: '1.6' }}>
+          Serving children & families in the Hampton Roads Area and surrounding communities with IN-HOME speech therapy. We come to you!
+        </p>
       </section>
 
       {/* Welcome Section */}
@@ -434,7 +518,7 @@ function App() {
             boxShadow: '0 6px 25px rgba(176,218,182,0.2)'
           }}>
             <h3 style={{ fontSize: '2rem', color: '#99acff', marginBottom: '0.5rem', fontWeight: '700' }}>
-              Cherie Rose, M.S., CCC-SLP
+              Cherie Rose, M.A., CCC-SLP
             </h3>
             <p style={{ fontSize: '1.1rem', color: '#B0DAB6', marginBottom: '1.8rem', fontStyle: 'italic', fontWeight: '600' }}>
               Owner, Speech-Language Pathologist
@@ -453,7 +537,7 @@ function App() {
                 border: '2px solid #ff8447'
               }} 
             />            <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
-              Cherie Rose, MS, CCC-SLP, is a board-certified speech-language pathologist through the American Speech-Language-Hearing Association (ASHA) and holds a Virginia state license. She earned her Bachelor’s degree in Speech-Language Pathology with a minor in Special Education from Old Dominion University in 2015, followed by a Master’s degree in Communicative Sciences and Disorders from Hampton University in 2018.
+              Cherie Rose is a board-certified speech-language pathologist through the American Speech-Language-Hearing Association (ASHA) and holds a Virginia state license. She earned her Bachelor’s degree in Speech-Language Pathology with a minor in Special Education from Old Dominion University in 2015, followed by a Master’s degree in Communicative Sciences and Disorders from Hampton University in 2018.
             </p>
             <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
               With over seven years of clinical experience, Cherie brings both professional expertise and deep personal insight to her work with children and families. Her passion for speech-language pathology began in 2006, when she recognized that her youngest son was not meeting the same verbal milestones as her eldest. After a referral to speech therapy by her pediatrician, Cherie discovered her calling.
@@ -498,7 +582,7 @@ function App() {
               }} 
             />
             <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
-              Lindsey Lewandowski, CCC-SLP, is a board certified speech language pathologist through the American Speech Language Hearing Association (ASHA) and holds a Virgina state license. She earned her undergraduate degree in sociology from the University of Virginia in 2006 where she played Division 1 field hockey.  In 2008, her dad suffered a major stroke and needed intensive speech therapy. Through this experience, she learned of speech therapy and went on to study speech pathology at Old Dominion University where she earned her Master of Science in Education in 2012.
+              Lindsey Lewandowski is a board certified speech language pathologist through the American Speech Language Hearing Association (ASHA) and holds a Virgina state license. She earned her undergraduate degree in sociology from the University of Virginia in 2006 where she played Division 1 field hockey.  In 2008, her dad suffered a major stroke and needed intensive speech therapy. Through this experience, she learned of speech therapy and went on to study speech pathology at Old Dominion University where she earned her Master of Science in Education in 2012.
             </p>
             <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
               With 14 years of clinical experience, Lindsey has worked in a variety of settings including public schools, early intervention, and outpatient settings. Her background includes extensive work with children presenting with a wide range of communication needs including Autism, Apraxia, AAC, Receptive/Expressive Language Delays, Articulation/Phonological Disorders, and more. 
@@ -733,16 +817,13 @@ function App() {
         textAlign: 'center'
       }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <h3 style={{ fontSize: '1.9rem', marginBottom: '1.5rem', fontWeight: '700' }}>First Connect Speech Therapy</h3>
+          <h3 style={{ fontSize: '1.9rem', marginBottom: '1.5rem', fontWeight: '700' }}>First Connect Pediatric Therapy</h3>
           <p style={{ fontSize: '1.1rem', marginBottom: '0.5rem' }}>
             📞 <a href="tel:7575673649" style={{ color: '#fff', textDecoration: 'none', fontWeight: '700' }}>(757) 567-3649</a> | 📠 <a href="tel:8665982999" style={{ color: '#fff', textDecoration: 'none', fontWeight: '700' }}>(866) 598-2999</a>
           </p>
-          <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>
-            📍 123 Main Street, Suite 100, Newport News, VA 23606
-          </p>
           <p style={{ fontSize: '0.95rem', marginTop: '2rem', opacity: 0.95 }}>
-            Locally owned small business in Newport News, VA<br />
-            © 2026 First Connect Speech Therapy. All rights reserved.
+            Locally owned small business in Yorktown, VA<br />
+            © 2026 First Connect Pediatric Therapy. All rights reserved.
           </p>
         </div>
       </footer>

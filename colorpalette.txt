@@ -1,0 +1,4 @@
+Blue 		99acff
+Orange 		ff8447
+Green 		B0DAB6
+Light Yellow 	FDFAE6

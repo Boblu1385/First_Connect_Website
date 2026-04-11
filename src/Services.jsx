@@ -1,10 +1,16 @@
+import { useState } from 'react'
 import logoImage from '../logo_images/Logo Concept-2026-02-01-White.png';
 import ccpSlpLogo from '../logo_images/CCP-SLP-logo.png';
 import childApraxiaLogo from '../logo_images/Child Apraxia Treatment.png';
 import meaningfulSpeechLogo from "../logo_images/Meaningful speech nla trained clinician logo.png";
 import vaDeptHealthLogo from "../logo_images/Virginia Department of Health Professions.png";
+import developmentMilestonesPdf from '../pdfs/Development Milestones.pdf'
+import speechSoundsPdf from '../pdfs/Speech Sounds.pdf'
+import bubbleGirlImage from '../logo_images/Bubble_Girl.png'
 
 function Services() {
+  const [showMilestonesDropdown, setShowMilestonesDropdown] = useState(false)
+
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -46,6 +52,23 @@ function Services() {
           .credentials-grid img {
             height: 80px !important;
             width: 160px !important;
+          }
+          .milestones-dropdown {
+            display: inline-block !important;
+          }
+          .milestones-trigger {
+            padding: 0.4rem 0.6rem !important;
+            font-size: 0.9rem !important;
+          }
+          .milestones-menu {
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+            min-width: 200px !important;
+          }
+          .specialty-photo {
+            float: none !important;
+            width: 100% !important;
+            margin: 0 0 1.5rem 0 !important;
           }
         }
       `}</style>
@@ -110,13 +133,65 @@ function Services() {
             fontSize: '1rem',
             transition: 'color 0.3s'
           }}>Payments</a>
-          <a href="/#resources" style={{
-            color: '#fff',
-            textDecoration: 'none',
-            fontWeight: '600',
-            fontSize: '1rem',
-            transition: 'color 0.3s'
-          }}>Resources</a>
+          <div 
+            className="milestones-dropdown"
+            style={{ position: 'relative', display: 'inline-block' }}
+            onMouseEnter={() => setShowMilestonesDropdown(true)}
+            onMouseLeave={() => setShowMilestonesDropdown(false)}
+          >
+            <span className="milestones-trigger" style={{ color: '#fff', fontWeight: '600', fontSize: '1rem', cursor: 'pointer', padding: '0.5rem', display: 'inline-block' }}>
+              Development Milestones
+            </span>
+            {showMilestonesDropdown && (
+              <div className="milestones-menu" style={{
+                position: 'absolute',
+                top: 'calc(100% - 0.25rem)',
+                left: '0',
+                background: '#fff',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+                borderRadius: '8px',
+                minWidth: '220px',
+                paddingTop: '0.75rem',
+                paddingBottom: '0.5rem',
+                zIndex: 1000
+              }}>
+                <a 
+                  href={developmentMilestonesPdf} 
+                  download="Development Milestones.pdf"
+                  style={{
+                    display: 'block',
+                    padding: '0.75rem 1.25rem',
+                    color: '#4a4a4a',
+                    textDecoration: 'none',
+                    fontWeight: '600',
+                    fontSize: '0.95rem',
+                    transition: 'background 0.2s'
+                  }}
+                  onMouseEnter={(e) => e.target.style.background = '#f0f0f0'}
+                  onMouseLeave={(e) => e.target.style.background = 'transparent'}
+                >
+                  📥 Development Milestones
+                </a>
+                <a 
+                  href={speechSoundsPdf} 
+                  download="Speech Sounds.pdf"
+                  style={{
+                    display: 'block',
+                    padding: '0.75rem 1.25rem',
+                    color: '#4a4a4a',
+                    textDecoration: 'none',
+                    fontWeight: '600',
+                    fontSize: '0.95rem',
+                    transition: 'background 0.2s'
+                  }}
+                  onMouseEnter={(e) => e.target.style.background = '#f0f0f0'}
+                  onMouseLeave={(e) => e.target.style.background = 'transparent'}
+                >
+                  📥 Speech Sounds
+                </a>
+              </div>
+            )}
+          </div>
           <a href="/#contact" style={{
             color: '#fff',
             textDecoration: 'none',
@@ -298,6 +373,21 @@ function Services() {
           <h3 style={{ fontSize: '2rem', color: '#99acff', marginBottom: '1.5rem', fontWeight: '700' }}>
             Childhood Apraxia of Speech
           </h3>
+          <img 
+            src={bubbleGirlImage} 
+            alt="Child blowing bubbles" 
+            className="specialty-photo"
+            style={{
+              float: 'left',
+              width: '45%',
+              height: 'auto',
+              marginRight: '2rem',
+              marginBottom: '1rem',
+              borderRadius: '12px',
+              boxShadow: '0 4px 15px rgba(176,218,182,0.3)',
+              border: '2px solid #99acff'
+            }} 
+          />
           <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
             Children with Childhood Apraxia of Speech (CAS) often benefit from targeted support to plan and sequence the movements needed for clear speech. We incorporate a motor-based treatment approach known as DTTC (Dynamic Temporal and Tactile Cueing) and techniques from PROMPT within engaging, child-directed activities to strengthen motor speech skills in a fun and supportive way. Speech therapy can help your child:
           </p>

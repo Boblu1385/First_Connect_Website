@@ -8,9 +8,10 @@ import childApraxiaLogo from '../logo_images/Child Apraxia Treatment.png'
 import meaningfulSpeechLogo from '../logo_images/Meaningful speech nla trained clinician logo.png'
 import vaDeptHealthLogo from '../logo_images/Virginia Department of Health Professions.png'
 import cherieFamilyImage from '../logo_images/Cherie_Family_Photo.jpg'
-import lindseyFamilyImage from '../logo_images/Lindsey_Family_Photo.jpg'
+import lindseyFamilyImage from '../logo_images/Lewandowski_Family.jpg'
 import developmentMilestonesPdf from '../pdfs/Development Milestones.pdf'
 import speechSoundsPdf from '../pdfs/Speech Sounds.pdf'
+
 
 function App() {
   const [showMilestonesDropdown, setShowMilestonesDropdown] = useState(false)
@@ -572,7 +573,7 @@ function App() {
               className="lindsey-photo"
               style={{
                 float: 'right',
-                width: '48%',
+                width: '40%',
                 height: 'auto',
                 marginLeft: '2rem',
                 marginBottom: '1rem',
@@ -585,7 +586,7 @@ function App() {
               Lindsey Lewandowski is a board certified speech language pathologist through the American Speech Language Hearing Association (ASHA) and holds a Virgina state license. She earned her undergraduate degree in sociology from the University of Virginia in 2006 where she played Division 1 field hockey.  In 2008, her dad suffered a major stroke and needed intensive speech therapy. Through this experience, she learned of speech therapy and went on to study speech pathology at Old Dominion University where she earned her Master of Science in Education in 2012.
             </p>
             <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
-              With 14 years of clinical experience, Lindsey has worked in a variety of settings including public schools, early intervention, and outpatient settings. Her background includes extensive work with children presenting with a wide range of communication needs including Autism, Apraxia, AAC, Receptive/Expressive Language Delays, Articulation/Phonological Disorders, and more. 
+              With 14 years of clinical experience, Lindsey has worked in a variety of settings including public schools, early intervention, and outpatient settings. Her background includes extensive work with children presenting with a wide range of communication needs including Autism, Apraxia, AAC, Receptive/Expressive Language Delays, Articulation/Phonological Disorders, and feeding disorders. 
             </p>
             <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
               Lindsey is dedicated to using a child-led, play-based approach that focuses on building trust and connection. She is committed to ongoing professional development and continually seeks out advanced training to stay current with evidence based practices in the field.
@@ -634,7 +635,7 @@ function App() {
               <li>NLA (Natural Language Acquisition) trained clinical through the Meaningful Speech Course on Echolalia and Gestalt Language Processing</li>
               <li>Meaningful Speech Certification-Gestalt Language Processing & AAC</li>
               <li>Meaningful Speech Language Sampling Course</li>
-              <li>Sensory trained clinician through the Inside Out Sensory Certificate (Level 1 trained; Working towards completing level 2)</li>
+              <li>Sensory trained clinician through the Inside Out Sensory Certificate (Level 1 and 2 trained)</li>
               <li>PROMPT (Prompts for Restructuring Oral Muscular Phonetic Targets) certification for treating Childhood Apraxia of Speech (CAS); Level 1: Introduction and Level 2: Bridging</li>
               <li>Diagnosis and Management of Childhood Apraxia of Speech: Dynamic Temporal and Tactile Cueing by Edythe Strand</li>
               <li>Oral Placement Therapy techniques through Talk Tools</li>
@@ -660,7 +661,7 @@ function App() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem' }}>
             <div style={{ background: '#fff', padding: '2.5rem', borderRadius: '16px', boxShadow: '0 6px 25px rgba(153,172,255,0.2)', borderLeft: '4px solid #99acff' }}>
               <p style={{ fontSize: '1.15rem', color: '#4a4a4a', fontStyle: 'italic', lineHeight: '1.9', marginBottom: '1.2rem' }}>
-                "First Connect Speech Therapy is uniquely welcoming and affirming of all kids with communication needs. The team is professional, caring, and dedicated to helping each child reach their full potential."
+                "Cherie has provided exceptional care for my son over the past two years. The progress he has made under her guidance has been incredible; he has transitioned from being shy and nonspeaking to a social, confident and talkative child. Her dedication to our son's growth and her support our whole family has been invaluable. She far more then a provided; she is a vital part of our lives."
               </p>
               <p style={{ fontSize: '1rem', color: '#B0DAB6', fontWeight: '600', textAlign: 'right' }}>~ Parent</p>
             </div>

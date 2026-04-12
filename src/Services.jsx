@@ -353,7 +353,7 @@ function Services() {
             className="specialty-photo"
             style={{
               float: 'left',
-              width: '45%',
+              width: '40%',
               height: 'auto',
               marginRight: '2rem',
               marginBottom: '1rem',
@@ -443,7 +443,7 @@ function Services() {
             className="specialty-photo"
             style={{
               float: 'left',
-              width: '40%',
+              width: '350%',
               height: 'auto',
               marginRight: '2rem',
               marginBottom: '1rem',

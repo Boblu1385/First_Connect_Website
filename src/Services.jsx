@@ -9,6 +9,8 @@ import speechSoundsPdf from '../pdfs/Speech Sounds.pdf'
 import bubbleGirlImage from '../logo_images/Bubble_Girl.png'
 import eatingImage from '../logo_images/Eating.jpg'
 import tunnelImage from '../logo_images/Tunnel.jpg'
+import zoeyImage from '../logo_images/zoey.jpg'
+import zanderImage from '../logo_images/zander.jpeg'
 
 function Services() {
   const [showMilestonesDropdown, setShowMilestonesDropdown] = useState(false)
@@ -345,6 +347,21 @@ function Services() {
           <h3 style={{ fontSize: '2rem', color: '#99acff', marginBottom: '1.5rem', fontWeight: '700' }}>
             Articulation and Speech Sound Disorders
           </h3>
+          <img 
+            src={zoeyImage} 
+            alt="Child blowing bubbles" 
+            className="specialty-photo"
+            style={{
+              float: 'left',
+              width: '45%',
+              height: 'auto',
+              marginRight: '2rem',
+              marginBottom: '1rem',
+              borderRadius: '12px',
+              boxShadow: '0 4px 15px rgba(176,218,182,0.3)',
+              border: '2px solid #B0DAB6'
+            }} 
+          />
           <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
             Is your child struggling to pronounce certain sounds or be understood when they speak? We support children with speech sound challenges including articulation and phonology using personalized, play-based therapy approaches. Through articulation and phonological intervention, your child will learn to:
           </p>
@@ -380,7 +397,7 @@ function Services() {
             alt="Child blowing bubbles" 
             className="specialty-photo"
             style={{
-              float: 'left',
+              float: 'right',
               width: '45%',
               height: 'auto',
               marginRight: '2rem',
@@ -420,6 +437,21 @@ function Services() {
           <h3 style={{ fontSize: '2rem', color: '#99acff', marginBottom: '1.5rem', fontWeight: '700' }}>
             Augmentative and Alternative Communication (AAC)
           </h3>
+          <img 
+            src={zanderImage} 
+            alt="Child playing with a communication device" 
+            className="specialty-photo"
+            style={{
+              float: 'left',
+              width: '40%',
+              height: 'auto',
+              marginRight: '2rem',
+              marginBottom: '1rem',
+              borderRadius: '12px',
+              boxShadow: '0 4px 15px rgba(176,218,182,0.3)',
+              border: '2px solid #ff8447'
+            }} 
+          />
           <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
             When a child has difficulty expressing themselves through speech, it can lead to frustration and limit participation in everyday life. We support communication by introducing Augmentative and Alternative Communication (AAC) to create a dependable way for your child to share their message—through gestures, signs, or a communication device. AAC therapy helps your child:
           </p>

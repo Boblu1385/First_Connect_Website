@@ -667,7 +667,13 @@ function App() {
             </div>
             <div style={{ background: '#fff', padding: '2.5rem', borderRadius: '16px', boxShadow: '0 6px 25px rgba(153,172,255,0.2)', borderLeft: '4px solid #99acff' }}>
               <p style={{ fontSize: '1.15rem', color: '#4a4a4a', fontStyle: 'italic', lineHeight: '1.9', marginBottom: '1.2rem' }}>
-                "My family and I have had an outstanding experience with First Connect. The therapists are knowledgeable, patient, and truly care about the progress of each child."
+                "Lindsey gave us comfort and support after my son was diagnosed with autism. When we met her for the evaluation, I felt understood rather than judged. She helped my son progress from pointing and making noises to talking non‑stop."
+              </p>
+              <p style={{ fontSize: '1rem', color: '#B0DAB6', fontWeight: '600', textAlign: 'right' }}>~ Parent</p>
+            </div>
+            <div style={{ background: '#fff', padding: '2.5rem', borderRadius: '16px', boxShadow: '0 6px 25px rgba(153,172,255,0.2)', borderLeft: '4px solid #99acff' }}>
+              <p style={{ fontSize: '1.15rem', color: '#4a4a4a', fontStyle: 'italic', lineHeight: '1.9', marginBottom: '1.2rem' }}>
+                "Lindsey supported our son's growth in both speech and feeding skills. She goes above and beyond with research, book recommendations, and nutrition guidance. I am beyond grateful and blessed to have her services."
               </p>
               <p style={{ fontSize: '1rem', color: '#B0DAB6', fontWeight: '600', textAlign: 'right' }}>~ Parent</p>
             </div>
@@ -696,10 +702,10 @@ function App() {
             border: '2px solid #B0DAB6'
           }}>
             <p style={{ fontSize: '1.2rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '2rem' }}>
-              Our services are offered on a <strong>private-pay basis</strong> at this time. Clients receive a comprehensive superbill that may be submitted to their insurance provider for possible out-of-network reimbursement, depending on individual plan benefits.
+              Our services are offered on a <strong>private-pay basis</strong> at this time. Clients receive a comprehensive <strong>superbill</strong> that may be submitted to their insurance provider for possible out-of-network reimbursement, depending on individual plan benefits.
             </p>
             <p style={{ fontSize: '1.2rem', color: '#4a4a4a', lineHeight: '1.9' }}>
-              The practice is in the process of pursuing insurance credentialing, and we will notify families as new options become available.
+              <strong>The practice is in the process of pursuing insurance credentialing, and we will notify families as new options become available.</strong>
             </p>
           </div>
           <div style={{ textAlign: 'center', marginTop: '3rem' }}>

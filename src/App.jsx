@@ -743,7 +743,7 @@ function App() {
               <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📅</div>
               <h3 style={{ fontSize: '1.6rem', color: '#99acff', marginBottom: '1rem', fontWeight: '700' }}>Schedule an Evaluation</h3>
               <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9' }}>
-                Reach out to us via phone or contact form. Call us at <a href="tel:7575673649" style={{ color: '#ff8447', fontWeight: 'bold', textDecoration: 'none' }}>(757) 567-3649</a>
+                Reach out to us via phone or contact form. Call us at <a href="tel:7578484979" style={{ color: '#ff8447', fontWeight: 'bold', textDecoration: 'none' }}>(757) 848-4979</a>
               </p>
             </div>
             <div style={{ textAlign: 'center', padding: '2.5rem', background: '#fff', borderRadius: '16px', boxShadow: '0 6px 25px rgba(153,172,255,0.2)', border: '2px solid #99acff' }}>

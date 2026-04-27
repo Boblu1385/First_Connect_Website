@@ -826,7 +826,10 @@ function App() {
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <h3 style={{ fontSize: '1.9rem', marginBottom: '1.5rem', fontWeight: '700' }}>First Connect Pediatric Therapy</h3>
           <p style={{ fontSize: '1.1rem', marginBottom: '0.5rem' }}>
-            📞 <a href="tel:7575673649" style={{ color: '#fff', textDecoration: 'none', fontWeight: '700' }}>(757) 567-3649</a> | 📠 <a href="tel:8665982999" style={{ color: '#fff', textDecoration: 'none', fontWeight: '700' }}>(866) 598-2999</a>
+            📞 <a href="tel:7578484979" style={{ color: '#fff', textDecoration: 'none', fontWeight: '700' }}>(757) 848-4979</a>
+          </p>
+          <p style={{ fontSize: '1.1rem', marginBottom: '0.5rem' }}>
+            📍 400 Blevins Run, Yorktown, VA 23693
           </p>
           <p style={{ fontSize: '0.95rem', marginTop: '2rem', opacity: 0.95 }}>
             Locally owned small business in Yorktown, VA<br />

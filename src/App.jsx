@@ -301,10 +301,10 @@ function App() {
         textAlign: 'center'
       }}>
         <h1 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '1rem', lineHeight: '1.3', color: '#fff' }}>
-          Neurodiversity-Affirming Speech Therapy in Newport News, VA
+          Neurodiversity-Affirming Speech Therapy
         </h1>
         <p style={{ fontSize: '1.2rem', fontWeight: '500', color: '#fff', marginTop: '1rem', lineHeight: '1.6' }}>
-          Serving children & families in the Hampton Roads Area and surrounding communities with IN-HOME speech therapy. We come to you!
+          Serving children & families in the Newport News, Hampton, Yorktown and surrounding communities with IN-HOME speech therapy. We come to you!
         </p>
       </section>
 
@@ -334,10 +334,10 @@ function App() {
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '2rem' }}>
               <div className="spwidget-button-wrapper">
                 <a 
-                  href="https://cherie-rose6172.clientsecure.me" 
+                  href="https://first-connect-therapy.clientsecure.me" 
                   className="spwidget-button" 
-                  data-spwidget-scope-id="1fc262b0-09ed-4c1e-bb47-d29bb65b2f2f" 
-                  data-spwidget-scope-uri="cherie-rose6172" 
+                  data-spwidget-scope-id="1a674ed0-fd73-42a6-bf80-df02db319d13" 
+                  data-spwidget-scope-uri="first-connect-therapy" 
                   data-spwidget-application-id="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b" 
                   data-spwidget-type="OAR" 
                   data-spwidget-scope-global 
@@ -460,10 +460,10 @@ function App() {
           <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
             <div className="spwidget-button-wrapper">
               <a 
-                href="https://cherie-rose6172.clientsecure.me" 
+                href="https://first-connect-therapy.clientsecure.me" 
                 className="spwidget-button" 
-                data-spwidget-scope-id="1fc262b0-09ed-4c1e-bb47-d29bb65b2f2f" 
-                data-spwidget-scope-uri="cherie-rose6172" 
+                data-spwidget-scope-id="1a674ed0-fd73-42a6-bf80-df02db319d13" 
+                data-spwidget-scope-uri="first-connect-therapy" 
                 data-spwidget-application-id="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b" 
                 data-spwidget-type="OAR" 
                 data-spwidget-scope-global 
@@ -809,10 +809,10 @@ function App() {
           <div style={{ textAlign: 'center' }}>
             <div className="spwidget-button-wrapper">
               <a 
-                href="https://cherie-rose6172.clientsecure.me" 
+                href="https://first-connect-therapy.clientsecure.me" 
                 className="spwidget-button" 
-                data-spwidget-scope-id="1fc262b0-09ed-4c1e-bb47-d29bb65b2f2f" 
-                data-spwidget-scope-uri="cherie-rose6172" 
+                data-spwidget-scope-id="1a674ed0-fd73-42a6-bf80-df02db319d13" 
+                data-spwidget-scope-uri="first-connect-therapy" 
                 data-spwidget-application-id="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b" 
                 data-spwidget-type="OAR" 
                 data-spwidget-scope-global 

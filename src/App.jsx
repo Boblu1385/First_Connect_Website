@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import logoImage from '../logo_images/Logo Concept-2026-02-01-White.png'
 import groupJoyImage from '../logo_images/GroupJoy.jpg'
@@ -16,10 +16,49 @@ import speechSoundsPdf from '../pdfs/Speech Sounds.pdf'
 function App() {
   const [showMilestonesDropdown, setShowMilestonesDropdown] = useState(false)
 
+  // Load SimplePractice widget script
+  useEffect(() => {
+    const script = document.createElement('script')
+    script.src = 'https://widget-cdn.simplepractice.com/assets/integration-1.0.js'
+    script.async = true
+    document.body.appendChild(script)
+    return () => {
+      document.body.removeChild(script)
+    }
+  }, [])
+
   return (
     <>
       {/* Mobile Responsive Styles */}
       <style>{`
+        /* SimplePractice Widget Styles */
+        .spwidget-button-wrapper {
+          text-align: center;
+        }
+        .spwidget-button {
+          display: inline-block;
+          padding: 12px 30px;
+          color: #fff;
+          background: #ff8447;
+          border: 2px solid #ff8447;
+          border-radius: 25px;
+          font-size: 16px;
+          font-weight: 700;
+          text-decoration: none;
+          box-shadow: 0 4px 15px rgba(255,132,71,0.3);
+          transition: all 0.2s;
+        }
+        .spwidget-button:hover {
+          background: #ff6a2e;
+          border-color: #ff6a2e;
+          transform: translateY(-2px);
+          box-shadow: 0 6px 20px rgba(255,132,71,0.4);
+        }
+        .spwidget-button:active {
+          transform: translateY(0);
+          box-shadow: 0 2px 10px rgba(255,132,71,0.3);
+        }
+
         @media (max-width: 768px) {
           header {
             padding: 1rem 1rem !important;
@@ -293,17 +332,20 @@ function App() {
               We provide ADOS-2 testing, the gold standard for autism evaluation to ensure you child receives the most accurate support possible.
             </p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '2rem' }}>
-              <a href="#contact" style={{
-                background: '#ff8447',
-                color: '#fff',
-                padding: '0.9rem 2rem',
-                borderRadius: '25px',
-                textDecoration: 'none',
-                fontWeight: '700',
-                boxShadow: '0 4px 15px rgba(255,132,71,0.3)',
-                transition: 'transform 0.2s',
-                fontSize: '1.05rem'
-              }}>Book a Free Consult</a>
+              <div className="spwidget-button-wrapper">
+                <a 
+                  href="https://cherie-rose6172.clientsecure.me" 
+                  className="spwidget-button" 
+                  data-spwidget-scope-id="1fc262b0-09ed-4c1e-bb47-d29bb65b2f2f" 
+                  data-spwidget-scope-uri="cherie-rose6172" 
+                  data-spwidget-application-id="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b" 
+                  data-spwidget-type="OAR" 
+                  data-spwidget-scope-global 
+                  data-spwidget-autobind
+                >
+                  Request Appointment
+                </a>
+              </div>
             </div>
           </div>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -416,17 +458,20 @@ function App() {
 
           {/* Centered Book a Free Consult Button */}
           <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
-            <a href="#contact" style={{
-              background: '#ff8447',
-              color: '#fff',
-              padding: '1rem 2.5rem',
-              borderRadius: '25px',
-              textDecoration: 'none',
-              fontWeight: '700',
-              boxShadow: '0 4px 15px rgba(255,132,71,0.3)',
-              transition: 'transform 0.2s',
-              fontSize: '1.1rem'
-            }}>Book a Free Consult</a>
+            <div className="spwidget-button-wrapper">
+              <a 
+                href="https://cherie-rose6172.clientsecure.me" 
+                className="spwidget-button" 
+                data-spwidget-scope-id="1fc262b0-09ed-4c1e-bb47-d29bb65b2f2f" 
+                data-spwidget-scope-uri="cherie-rose6172" 
+                data-spwidget-application-id="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b" 
+                data-spwidget-type="OAR" 
+                data-spwidget-scope-global 
+                data-spwidget-autobind
+              >
+                Request Appointment
+              </a>
+            </div>
             <a href="/services" style={{
               background: '#fff',
               color: '#99acff',
@@ -739,13 +784,6 @@ function App() {
             Get Started!
           </h2>
           <div className="get-started-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2.5rem', marginBottom: '3rem' }}>
-            <div style={{ textAlign: 'center', padding: '2.5rem', background: '#fff', borderRadius: '16px', boxShadow: '0 6px 25px rgba(255,132,71,0.2)', border: '2px solid #ff8447' }}>
-              <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📅</div>
-              <h3 style={{ fontSize: '1.6rem', color: '#99acff', marginBottom: '1rem', fontWeight: '700' }}>Schedule an Evaluation</h3>
-              <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9' }}>
-                Reach out to us via phone or contact form. Call us at <a href="tel:7578484979" style={{ color: '#ff8447', fontWeight: 'bold', textDecoration: 'none' }}>(757) 848-4979</a>
-              </p>
-            </div>
             <div style={{ textAlign: 'center', padding: '2.5rem', background: '#fff', borderRadius: '16px', boxShadow: '0 6px 25px rgba(153,172,255,0.2)', border: '2px solid #99acff' }}>
               <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📞</div>
               <h3 style={{ fontSize: '1.6rem', color: '#99acff', marginBottom: '1rem', fontWeight: '700' }}>Free Consultation</h3>
@@ -760,20 +798,29 @@ function App() {
                 After our consultation, we will provide you with an intake form with a series of questions and all required documentation. After that, time to get scheduled!
               </p>
             </div>
+            <div style={{ textAlign: 'center', padding: '2.5rem', background: '#fff', borderRadius: '16px', boxShadow: '0 6px 25px rgba(255,132,71,0.2)', border: '2px solid #ff8447' }}>
+              <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📅</div>
+              <h3 style={{ fontSize: '1.6rem', color: '#99acff', marginBottom: '1rem', fontWeight: '700' }}>Schedule an Evaluation</h3>
+              <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9' }}>
+                Reach out to us via phone or contact form. Call us at <a href="tel:7578484979" style={{ color: '#ff8447', fontWeight: 'bold', textDecoration: 'none' }}>(757) 848-4979</a>
+              </p>
+            </div>
           </div>
           <div style={{ textAlign: 'center' }}>
-            <a href="tel:7575673649" style={{
-              background: '#ff8447',
-              color: '#fff',
-              padding: '1.1rem 3rem',
-              borderRadius: '30px',
-              textDecoration: 'none',
-              fontWeight: '700',
-              fontSize: '1.15rem',
-              boxShadow: '0 6px 20px rgba(255,132,71,0.4)',
-              transition: 'transform 0.2s',
-              display: 'inline-block'
-            }}>Schedule Now</a>
+            <div className="spwidget-button-wrapper">
+              <a 
+                href="https://cherie-rose6172.clientsecure.me" 
+                className="spwidget-button" 
+                data-spwidget-scope-id="1fc262b0-09ed-4c1e-bb47-d29bb65b2f2f" 
+                data-spwidget-scope-uri="cherie-rose6172" 
+                data-spwidget-application-id="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b" 
+                data-spwidget-type="OAR" 
+                data-spwidget-scope-global 
+                data-spwidget-autobind
+              >
+                Request Appointment
+              </a>
+            </div>
           </div>
         </div>
       </section>

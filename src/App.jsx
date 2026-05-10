@@ -346,6 +346,22 @@ function App() {
                   Request Appointment
                 </a>
               </div>
+              <div className="spwidget-button-wrapper">
+                <a 
+                  href="https://first-connect-therapy.clientsecure.me" 
+                  className="spwidget-button" 
+                  data-spwidget-scope-id="1a674ed0-fd73-42a6-bf80-df02db319d13" 
+                  data-spwidget-scope-uri="first-connect-therapy" 
+                  data-spwidget-application-id="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b" 
+                  data-spwidget-channel="embedded_widget" 
+                  data-spwidget-type="Contact form" 
+                  data-spwidget-contact 
+                  data-spwidget-scope-global 
+                  data-spwidget-autobind
+                >
+                  Contact Us
+                </a>
+              </div>
             </div>
           </div>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -443,7 +459,7 @@ function App() {
                 <li>Neurodiversity-affirming therapy</li>
                 <li>ADOS-2 testing</li>
                 <li>Gestalt language processing</li>
-                <li>AAC</li>
+                <li>Augmentative and Alternative Communication (AAC)</li>
                 <li>Childhood apraxia of speech</li>
                 <li>Speech sound disorders</li>
                 <li>Language delays</li>
@@ -470,6 +486,22 @@ function App() {
                 data-spwidget-autobind
               >
                 Request Appointment
+              </a>
+            </div>
+            <div className="spwidget-button-wrapper">
+              <a 
+                href="https://first-connect-therapy.clientsecure.me" 
+                className="spwidget-button" 
+                data-spwidget-scope-id="1a674ed0-fd73-42a6-bf80-df02db319d13" 
+                data-spwidget-scope-uri="first-connect-therapy" 
+                data-spwidget-application-id="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b" 
+                data-spwidget-channel="embedded_widget" 
+                data-spwidget-type="Contact form" 
+                data-spwidget-contact 
+                data-spwidget-scope-global 
+                data-spwidget-autobind
+              >
+                Contact Us
               </a>
             </div>
             <a href="/services" style={{
@@ -631,7 +663,7 @@ function App() {
               Lindsey Lewandowski is a board certified speech language pathologist through the American Speech Language Hearing Association (ASHA) and holds a Virgina state license. She earned her undergraduate degree in sociology from the University of Virginia in 2006 where she played Division 1 field hockey.  In 2008, her dad suffered a major stroke and needed intensive speech therapy. Through this experience, she learned of speech therapy and went on to study speech pathology at Old Dominion University where she earned her Master of Science in Education in 2012.
             </p>
             <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
-              With 14 years of clinical experience, Lindsey has worked in a variety of settings including public schools, early intervention, and outpatient settings. Her background includes extensive work with children presenting with a wide range of communication needs including Autism, Apraxia, AAC, Receptive/Expressive Language Delays, Articulation/Phonological Disorders, and feeding disorders. 
+              With 14 years of clinical experience, Lindsey has worked in a variety of settings including public schools, early intervention, and outpatient settings. Her background includes extensive work with children presenting with a wide range of communication needs including autism, apraxia, AAC, receptive/expressive language delays, articulation/phonological disorders, and feeding disorders. 
             </p>
             <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
               Lindsey is dedicated to using a child-led, play-based approach that focuses on building trust and connection. She is committed to ongoing professional development and continually seeks out advanced training to stay current with evidence based practices in the field.
@@ -783,30 +815,23 @@ function App() {
           <h2 style={{ fontSize: '2.5rem', color: '#99acff', marginBottom: '3rem', textAlign: 'center', fontWeight: '700' }}>
             Get Started!
           </h2>
-          <div className="get-started-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2.5rem', marginBottom: '3rem' }}>
+          <div className="get-started-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '2.5rem', marginBottom: '3rem', maxWidth: '900px', margin: '0 auto 3rem' }}>
             <div style={{ textAlign: 'center', padding: '2.5rem', background: '#fff', borderRadius: '16px', boxShadow: '0 6px 25px rgba(153,172,255,0.2)', border: '2px solid #99acff' }}>
               <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📞</div>
               <h3 style={{ fontSize: '1.6rem', color: '#99acff', marginBottom: '1rem', fontWeight: '700' }}>Free Consultation</h3>
               <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9' }}>
-                We offer a complimentary phone consultation to discuss your child's needs, answer questions about our approach, and determine if our services are the right fit for your family.
-              </p>
-            </div>
-            <div style={{ textAlign: 'center', padding: '2.5rem', background: '#fff', borderRadius: '16px', boxShadow: '0 6px 25px rgba(176,218,182,0.2)', border: '2px solid #B0DAB6' }}>
-              <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>✍️</div>
-              <h3 style={{ fontSize: '1.6rem', color: '#99acff', marginBottom: '1rem', fontWeight: '700' }}>Intake Form</h3>
-              <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9' }}>
-                After our consultation, we will provide you with an intake form with a series of questions and all required documentation. After that, time to get scheduled!
+                We offer a complimentary phone consultation to discuss your child's needs, answer questions about our approach, and determine if our services are the right fit for your family. Click "Request Appointment" below and follow the prompts to book your free consultation with us!
               </p>
             </div>
             <div style={{ textAlign: 'center', padding: '2.5rem', background: '#fff', borderRadius: '16px', boxShadow: '0 6px 25px rgba(255,132,71,0.2)', border: '2px solid #ff8447' }}>
               <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📅</div>
               <h3 style={{ fontSize: '1.6rem', color: '#99acff', marginBottom: '1rem', fontWeight: '700' }}>Schedule an Evaluation</h3>
               <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.9' }}>
-                Reach out to us via phone or contact form. Call us at <a href="tel:7578484979" style={{ color: '#ff8447', fontWeight: 'bold', textDecoration: 'none' }}>(757) 848-4979</a>
+                After your free consultation reach out to us via phone to proceed with an evaluation if we have not already scheduled you. Call us at <a href="tel:7578484979" style={{ color: '#ff8447', fontWeight: 'bold', textDecoration: 'none' }}>(757) 848-4979</a>
               </p>
             </div>
           </div>
-          <div style={{ textAlign: 'center' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
             <div className="spwidget-button-wrapper">
               <a 
                 href="https://first-connect-therapy.clientsecure.me" 
@@ -819,6 +844,22 @@ function App() {
                 data-spwidget-autobind
               >
                 Request Appointment
+              </a>
+            </div>
+            <div className="spwidget-button-wrapper">
+              <a 
+                href="https://first-connect-therapy.clientsecure.me" 
+                className="spwidget-button" 
+                data-spwidget-scope-id="1a674ed0-fd73-42a6-bf80-df02db319d13" 
+                data-spwidget-scope-uri="first-connect-therapy" 
+                data-spwidget-application-id="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b" 
+                data-spwidget-channel="embedded_widget" 
+                data-spwidget-type="Contact form" 
+                data-spwidget-contact 
+                data-spwidget-scope-global 
+                data-spwidget-autobind
+              >
+                Contact Us
               </a>
             </div>
           </div>

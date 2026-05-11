@@ -26,3 +26,25 @@ These are perfect for getting feedback during development!
 3.
 To host online follow up with this in a new terminal
 .\ngrok http 5173
+
+when ready to push to a remote depository:
+
+Workflow Moving Forward:
+To continue developing:
+
+
+git checkout development
+# Make your changes
+git add .
+git commit -m "Your changes"
+git push origin development
+
+When ready to launch the full site:
+
+
+git checkout main
+git merge development
+git push origin main
+Netlify will automatically deploy within 1-2 minutes!
+
+Go ahead and visit firstconnecttherapy.com to see your site live! 🚀

@@ -26,3 +26,55 @@ These are perfect for getting feedback during development!
 3.
 To host online follow up with this in a new terminal
 .\ngrok http 5173
+
+when ready to push to a remote depository:
+
+Workflow Moving Forward:
+To continue developing:
+
+
+git checkout development
+# Make your changes
+git add .
+git commit -m "Your changes"
+git push origin development
+
+When ready to launch the full site:
+
+
+git checkout main
+git merge development
+git push origin main
+Netlify will automatically deploy within 1-2 minutes!
+
+Go ahead and visit firstconnecttherapy.com to see your site live! 🚀
+
+ROB -- i seem to remember some sort of "build" operations? is that typical?
+
+AI -- Yes, there IS a build operation, but **Netlify handles it automatically** for you!
+
+Here's how it works:
+
+**What happens when you push to `main`:**
+
+1. You push your code: `git push origin main`
+2. Netlify detects the push
+3. **Netlify automatically runs:** `npm run build` (or whatever build command is configured)
+4. This creates a dist folder with optimized production files (minified JS, CSS, etc.)
+5. Netlify deploys the dist folder to your live site
+
+**You don't need to manually build** because Netlify does it on their servers.
+
+**If you wanted to test a production build locally:**
+```bash
+npm run build
+npm run preview
+```
+- `npm run build` - Creates the optimized dist folder
+- `npm run preview` - Serves the built files locally to test
+
+**Key difference:**
+- **Development:** `npm run dev` - Fast, unoptimized, hot-reload for coding
+- **Production:** `npm run build` - Optimized, minified files for live deployment (Netlify does this automatically)
+
+So your workflow remains the same - just push to `main` and Netlify handles the build. You can verify the build succeeded by checking the Netlify dashboard or waiting for the deployment confirmation.

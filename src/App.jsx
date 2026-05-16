@@ -8,7 +8,7 @@ import childApraxiaLogo from '../logo_images/Child Apraxia Treatment.png'
 import meaningfulSpeechLogo from '../logo_images/Meaningful speech nla trained clinician logo.png'
 import vaDeptHealthLogo from '../logo_images/Virginia Department of Health Professions.png'
 import cherieFamilyImage from '../logo_images/Cherie_Family_Photo.jpg'
-import lindseyFamilyImage from '../logo_images/Lewandowski_Family.jpg'
+import lindseyFamilyImage from '../logo_images/Lewandowski_Family.JPG'
 import developmentMilestonesPdf from '../pdfs/Development Milestones.pdf'
 import speechSoundsPdf from '../pdfs/Speech Sounds.pdf'
 

@@ -304,7 +304,7 @@ function App() {
           Neurodiversity-Affirming Speech Therapy
         </h1>
         <p style={{ fontSize: '1.2rem', fontWeight: '500', color: '#fff', marginTop: '1rem', lineHeight: '1.6' }}>
-          Serving children & families in the Newport News, Hampton, Yorktown and surrounding communities with IN-HOME speech therapy. We come to you!
+          Serving children & families in the Newport News, Hampton, Yorktown, Poquoson and surrounding communities with IN-HOME speech therapy. We come to you!
         </p>
       </section>
 
@@ -326,7 +326,7 @@ function App() {
               Welcome to First Connect Pediatric Speech Therapy
             </h2>
             <p style={{ fontSize: '1.15rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
-              At First Connect Pediatric Therapy, PLLC, we provide high quality, personalized speech and language therapy for children ages 18-months and older in Newport News, VA. 
+              At First Connect Pediatric Therapy, PLLC, we provide high quality, personalized speech and language therapy for children ages 18-months and older in Newport News, Hampton, Yorktown, Poquoson and surrounding communities. 
             </p>
             <p style={{ fontSize: '1.15rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '1.5rem' }}>
               We provide ADOS-2 testing, the gold standard for autism evaluation to ensure you child receives the most accurate support possible.
@@ -409,7 +409,7 @@ function App() {
                 We believe children learn best through play and thrive through connection.
               </p>
               <p style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.8' }}>
-                We understand that when a child feels safe and comfortable, true connection happens and language growth naturally emerges.
+                Our mission is to create a safe and comfortable environment where children feel supported and language skills can flourish.
               </p>
             </div>
 
@@ -780,9 +780,6 @@ function App() {
           }}>
             <p style={{ fontSize: '1.2rem', color: '#4a4a4a', lineHeight: '1.9', marginBottom: '2rem' }}>
               Our services are offered on a <strong>private-pay basis</strong> at this time. Clients receive a comprehensive <strong>superbill</strong> that may be submitted to their insurance provider for possible out-of-network reimbursement, depending on individual plan benefits.
-            </p>
-            <p style={{ fontSize: '1.2rem', color: '#4a4a4a', lineHeight: '1.9' }}>
-              <strong>The practice is in the process of pursuing insurance credentialing, and we will notify families as new options become available.</strong>
             </p>
           </div>
           <div style={{ textAlign: 'center', marginTop: '3rem' }}>

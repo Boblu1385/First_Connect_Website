@@ -218,7 +218,7 @@ function Services() {
           alignItems: 'center',
           gap: '1rem'
         }}>
-          <img src={logoImage} alt="First Connect Logo" style={{ height: '120px', width: '120px', borderRadius: '50%', background: '#B0DAB6', padding: '8px' }} />
+          <img src={logoImage} alt="First Connect Pediatric Therapy speech pathology clinic Newport News VA" style={{ height: '120px', width: '120px', borderRadius: '50%', background: '#B0DAB6', padding: '8px' }} />
           <h1 style={{ fontSize: '2rem', color: '#99acff', margin: 0, fontWeight: '700' }}>
             First Connect Pediatric Therapy, PLLC
           </h1>
@@ -349,7 +349,7 @@ function Services() {
           </h3>
           <img 
             src={zoeyImage} 
-            alt="Child blowing bubbles" 
+            alt="Child practicing articulation therapy speech sounds with bubble activities" 
             className="specialty-photo"
             style={{
               float: 'left',
@@ -394,7 +394,7 @@ function Services() {
           </h3>
           <img 
             src={bubbleGirlImage} 
-            alt="Child blowing bubbles" 
+            alt="Childhood apraxia of speech therapy using DTTC and PROMPT techniques" 
             className="specialty-photo"
             style={{
               float: 'right',
@@ -439,7 +439,7 @@ function Services() {
           </h3>
           <img 
             src={zanderImage} 
-            alt="Child playing with a communication device" 
+            alt="Child using AAC augmentative alternative communication device for speech therapy" 
             className="specialty-photo"
             style={{
               float: 'left',
@@ -487,7 +487,7 @@ function Services() {
           </h3>
           <img 
             src={tunnelImage} 
-            alt="Child playing in a tunnel" 
+            alt="Autistic child engaged in play-based speech therapy for gestalt language processing" 
             className="specialty-photo"
             style={{
               float: 'right',
@@ -534,7 +534,7 @@ function Services() {
           </h3>
           <img 
             src={eatingImage} 
-            alt="Child eating" 
+            alt="Child receiving feeding therapy for picky eating and oral motor skills development" 
             className="specialty-photo"
             style={{
               float: 'left',
@@ -568,22 +568,22 @@ function Services() {
           alignItems: 'center',
           justifyItems: 'center'
         }}>
-          <img src={ccpSlpLogo} alt="CCC-SLP Certified" style={{ 
+          <img src={ccpSlpLogo} alt="ASHA CCC-SLP certified speech language pathologist credential" style={{ 
             height: '150px',
             width: '300px',
             objectFit: 'contain'
           }} />
-          <img src={childApraxiaLogo} alt="Child Apraxia Treatment" style={{ 
+          <img src={childApraxiaLogo} alt="Childhood apraxia of speech treatment specialist certification" style={{ 
             height: '150px',
             width: '300px',
             objectFit: 'contain'
           }} />
-          <img src={meaningfulSpeechLogo} alt="Meaningful Speech NLA Trained Clinical" style={{ 
+          <img src={meaningfulSpeechLogo} alt="Natural Language Acquisition NLA trained clinician for gestalt language processing and autism" style={{ 
             height: '150px',
             width: '300px',
             objectFit: 'contain'
           }} />
-          <img src={vaDeptHealthLogo} alt="Virginia Department of Health Professions" style={{ 
+          <img src={vaDeptHealthLogo} alt="Virginia Department of Health Professions licensed speech therapist" style={{ 
             height: '150px',
             width: '300px',
             objectFit: 'contain'

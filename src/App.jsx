@@ -602,7 +602,7 @@ function App() {
               Owner, Speech-Language Pathologist
             </p>            <img 
               src={cherieFamilyImage} 
-              alt="Cherie with her family" 
+              alt="Cherie Rose MA CCC-SLP pediatric speech language pathologist Newport News VA with family" 
               className="cherie-photo"
               style={{
                 float: 'right',
@@ -646,7 +646,7 @@ function App() {
             </p>
             <img 
               src={lindseyFamilyImage} 
-              alt="Lindsey with her family" 
+              alt="Lindsey Lewandowski MS CCC-SLP pediatric speech therapist Hampton Yorktown VA with family" 
               className="lindsey-photo"
               style={{
                 float: 'right',
@@ -878,22 +878,22 @@ function App() {
           alignItems: 'center',
           justifyItems: 'center'
         }}>
-          <img src={ccpSlpLogo} alt="CCC-SLP Certified" style={{ 
+          <img src={ccpSlpLogo} alt="ASHA CCC-SLP certified speech language pathologist credential" style={{ 
             height: '150px',
             width: '300px',
             objectFit: 'contain'
           }} />
-          <img src={childApraxiaLogo} alt="Child Apraxia Treatment" style={{ 
+          <img src={childApraxiaLogo} alt="Childhood apraxia of speech treatment specialist certification" style={{ 
             height: '150px',
             width: '300px',
             objectFit: 'contain'
           }} />
-          <img src={meaningfulSpeechLogo} alt="Meaningful Speech NLA Trained Clinical" style={{ 
+          <img src={meaningfulSpeechLogo} alt="Natural Language Acquisition NLA trained clinician for gestalt language processing and autism" style={{ 
             height: '150px',
             width: '300px',
             objectFit: 'contain'
           }} />
-          <img src={vaDeptHealthLogo} alt="Virginia Department of Health Professions" style={{ 
+          <img src={vaDeptHealthLogo} alt="Virginia Department of Health Professions licensed speech therapist" style={{ 
             height: '150px',
             width: '300px',
             objectFit: 'contain'

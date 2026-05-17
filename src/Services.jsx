@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Helmet } from 'react-helmet-async'
 import logoImage from '../logo_images/Logo Concept-2026-02-01-White.png';
 import ccpSlpLogo from '../logo_images/CCP-SLP-logo.png';
 import childApraxiaLogo from '../logo_images/Child Apraxia Treatment.png';
@@ -24,6 +25,16 @@ function Services() {
 
   return (
     <div style={{ fontFamily: "'Quicksand', system-ui, -apple-system, sans-serif" }}>
+      <Helmet>
+        <title>Speech Therapy Services | AAC, Apraxia, Autism, Feeding Therapy | First Connect Newport News VA</title>
+        <meta name="description" content="Comprehensive speech therapy services including evaluations, articulation, childhood apraxia (DTTC/PROMPT), AAC therapy, autism/gestalt language processing, feeding therapy, and ADOS-2 testing in Newport News, Hampton, and Yorktown VA." />
+        <link rel="canonical" href="https://firstconnecttherapy.com/services" />
+        <meta property="og:title" content="Speech Therapy Services | First Connect Pediatric Therapy" />
+        <meta property="og:description" content="Expert pediatric speech therapy services: AAC, apraxia, autism, feeding therapy, ADOS-2, and more in Newport News VA." />
+        <meta property="og:url" content="https://firstconnecttherapy.com/services" />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
       {/* Mobile Responsive Styles */}
       <style>{`
         @media (max-width: 768px) {

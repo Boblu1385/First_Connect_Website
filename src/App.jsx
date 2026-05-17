@@ -250,7 +250,7 @@ function App() {
             borderRadius: '16px',
             boxShadow: '0 4px 15px rgba(176,218,182,0.2)'
           }}>
-            <img src={playtimeImage} alt="Playtime" style={{ 
+            <img src={playtimeImage} alt="Children playing together during speech therapy session" style={{ 
               width: '100%',
               height: '100%',
               objectFit: 'cover',
@@ -288,7 +288,7 @@ function App() {
             alignItems: 'center',
             gap: '1rem'
           }}>
-            <img src={logoImage} alt="Clinic Logo" style={{ height: '180px', width: '180px', borderRadius: '50%', background: '#B0DAB6', padding: '12px' }} />
+            <img src={logoImage} alt="First Connect Pediatric Therapy logo" style={{ height: '180px', width: '180px', borderRadius: '50%', background: '#B0DAB6', padding: '12px' }} />
           </div>
         </div>
       </section>
@@ -365,7 +365,7 @@ function App() {
             </div>
           </div>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <img src={groupJoyImage} alt="Clinic" style={{ 
+            <img src={groupJoyImage} alt="Children enjoying group play therapy session at First Connect" style={{ 
               width: '100%', 
               maxWidth: '800px', 
               height: 'auto', 

@@ -315,7 +315,7 @@ function App() {
           Neurodiversity-Affirming Speech Therapy
         </h1>
         <p style={{ fontSize: '1.2rem', fontWeight: '500', color: '#fff', marginTop: '1rem', lineHeight: '1.6' }}>
-          Serving children & families in the Newport News, Hampton, Yorktown, Poquoson and surrounding communities with IN-HOME speech therapy. We come to you!
+          Serving children & families in Newport News, Hampton, Yorktown, Poquoson and surrounding communities with IN-HOME speech therapy. We come to you!
         </p>
       </section>
 

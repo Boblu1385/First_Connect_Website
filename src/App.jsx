@@ -36,6 +36,7 @@ function App() {
         <link rel="canonical" href="https://firstconnecttherapy.com/" />
         <meta property="og:title" content="First Connect Pediatric Therapy | Speech Therapy Newport News VA" />
         <meta property="og:description" content="Neurodiversity-affirming pediatric speech therapy serving Newport News, Hampton, and Yorktown VA. Expert care for apraxia, autism, AAC, and feeding therapy." />
+        <meta property="og:image" content="https://firstconnecttherapy.com/favicon.svg" />
         <meta property="og:url" content="https://firstconnecttherapy.com/" />
         <meta property="og:type" content="website" />
       </Helmet>

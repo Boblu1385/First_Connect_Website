@@ -31,6 +31,7 @@ function Services() {
         <link rel="canonical" href="https://firstconnecttherapy.com/services" />
         <meta property="og:title" content="Speech Therapy Services | First Connect Pediatric Therapy" />
         <meta property="og:description" content="Expert pediatric speech therapy services: Articulation, AAC, apraxia, autism, feeding therapy, ADOS-2, and more in Newport News VA." />
+        <meta property="og:image" content="https://firstconnecttherapy.com/favicon.svg" />
         <meta property="og:url" content="https://firstconnecttherapy.com/services" />
         <meta property="og:type" content="website" />
       </Helmet>

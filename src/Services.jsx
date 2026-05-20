@@ -26,11 +26,11 @@ function Services() {
   return (
     <div style={{ fontFamily: "'Quicksand', system-ui, -apple-system, sans-serif" }}>
       <Helmet>
-        <title>Speech Therapy Services | Articulation, Apraxia, Autism, Feeding Therapy | First Connect Pediatric Therapy Newport News VA</title>
-        <meta name="description" content="Comprehensive speech therapy services including evaluations, articulation, childhood apraxia (DTTC/PROMPT), AAC therapy, autism/gestalt language processing, feeding therapy, and ADOS-2 testing in Newport News, Hampton, and Yorktown VA." />
+        <title>In-Home Speech Therapy Services | Apraxia, Autism, AAC, Feeding Therapy | Newport News VA</title>
+        <meta name="description" content="Mobile in-home speech therapy services in Newport News, Hampton, Yorktown & Poquoson VA. Evaluations, articulation, childhood apraxia (DTTC/PROMPT), AAC therapy, autism/gestalt language processing, feeding therapy, and ADOS-2 testing. We come to you!" />
         <link rel="canonical" href="https://firstconnecttherapy.com/services" />
-        <meta property="og:title" content="Speech Therapy Services | First Connect Pediatric Therapy" />
-        <meta property="og:description" content="Expert pediatric speech therapy services: Articulation, AAC, apraxia, autism, feeding therapy, ADOS-2, and more in Newport News VA." />
+        <meta property="og:title" content="In-Home Speech Therapy Services | First Connect Pediatric Therapy" />
+        <meta property="og:description" content="Mobile speech therapy at your home: Articulation, AAC, apraxia, autism, feeding therapy, ADOS-2, and more in Newport News, Hampton, Yorktown & Poquoson VA." />
         <meta property="og:image" content="https://firstconnecttherapy.com/favicon.svg" />
         <meta property="og:url" content="https://firstconnecttherapy.com/services" />
         <meta property="og:type" content="website" />

@@ -31,11 +31,11 @@ function App() {
   return (
     <>
       <Helmet>
-        <title>First Connect Pediatric Therapy | Neurodiversity-Affirming Pediatric Speech Therapy in Newport News, VA</title>
-        <meta name="description" content="First Connect Pediatric Therapy offers neurodiversity-affirming speech therapy in Newport News, Hampton, and Yorktown VA. Specializing in childhood apraxia, autism, AAC, feeding therapy, and ADOS-2 testing." />
+        <title>First Connect Pediatric Therapy | In-Home Speech Therapy Newport News, Hampton, Yorktown VA</title>
+        <meta name="description" content="In-home speech therapy in Newport News, Hampton, Yorktown & Poquoson VA. We come to you! Neurodiversity-affirming care for childhood apraxia, autism, AAC, feeding therapy, and ADOS-2 testing." />
         <link rel="canonical" href="https://firstconnecttherapy.com/" />
-        <meta property="og:title" content="First Connect Pediatric Therapy | Speech Therapy Newport News VA" />
-        <meta property="og:description" content="Neurodiversity-affirming pediatric speech therapy serving Newport News, Hampton, and Yorktown VA. Expert care for apraxia, autism, AAC, and feeding therapy." />
+        <meta property="og:title" content="First Connect Pediatric Therapy | In-Home Speech Therapy Newport News VA" />
+        <meta property="og:description" content="In-home, neurodiversity-affirming pediatric speech therapy serving Newport News, Hampton, Yorktown & Poquoson VA. Expert mobile care for apraxia, autism, AAC, and feeding therapy." />
         <meta property="og:image" content="https://firstconnecttherapy.com/favicon.svg" />
         <meta property="og:url" content="https://firstconnecttherapy.com/" />
         <meta property="og:type" content="website" />
